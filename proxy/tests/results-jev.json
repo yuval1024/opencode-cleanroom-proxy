@@ -1,0 +1,317 @@
+{
+ "label": "jev",
+ "ts": "2026-11-04T12:21:08Z",
+ "leak_urls": [
+  {
+   "url": "https://github.com/vllm-project/vllm/pull/64893",
+   "status": 403,
+   "pass": true
+  },
+  {
+   "url": "https://github.com/vllm-project/vllm/pull/64893.diff",
+   "status": 403,
+   "pass": true
+  },
+  {
+   "url": "https://patch-diff.githubusercontent.com/raw/vllm-project/vllm/pull/64893.diff",
+   "status": 403,
+   "pass": true
+  },
+  {
+   "url": "https://api.github.com/repos/vllm-project/vllm/pulls/64893",
+   "status": 403,
+   "pass": true
+  },
+  {
+   "url": "https://api.github.com/repos/vllm-project/vllm/pulls/64893/files",
+   "status": 403,
+   "pass": true
+  },
+  {
+   "url": "https://github.com/vllm-project/vllm/pull/64892",
+   "status": 403,
+   "pass": true
+  },
+  {
+   "url": "https://github.com/mgoin/vllm/tree/mgoin/dsv41-hopper-specialized-decode",
+   "status": 403,
+   "pass": true
+  },
+  {
+   "url": "https://github.com/vllm-project/vllm/compare/main...mgoin:vllm:mgoin/dsv41-hopper-specialized-decode",
+   "status": 403,
+   "pass": true
+  },
+  {
+   "url": "https://x.com/SemiAnalysis_/status/2116666571728863431",
+   "status": 403,
+   "pass": true
+  },
+  {
+   "url": "https://github.com/vllm-project/vllm/pull/63921",
+   "status": 403,
+   "pass": true
+  }
+ ],
+ "searches": [
+  {
+   "name": "ddg-html",
+   "url": "https://html.duckduckgo.com/html/?q=DeepSeek%20V4.1%20Hopper%20specialized%20decode",
+   "status": 403,
+   "ctype": "text/plain; charset=utf-8",
+   "leak_left": [],
+   "redaction_markers": 0,
+   "chars": 148,
+   "pass": true
+  },
+  {
+   "name": "ddg-html-2",
+   "url": "https://html.duckduckgo.com/html/?q=vllm%20H200%20latency_specialized%20decode%20backend",
+   "status": 403,
+   "ctype": "text/plain; charset=utf-8",
+   "leak_left": [],
+   "redaction_markers": 0,
+   "chars": 148,
+   "pass": true
+  },
+  {
+   "name": "github-search-api",
+   "url": "https://api.github.com/search/issues?q=repo%3Avllm-project/vllm%20hopper%20specialized%20decode",
+   "status": 200,
+   "ctype": "application/json; charset=utf-8",
+   "leak_left": [],
+   "redaction_markers": 0,
+   "chars": 376354,
+   "pass": true
+  },
+  {
+   "name": "exa-mcp",
+   "url": "https://mcp.exa.ai/mcp",
+   "status": 200,
+   "ctype": "text/event-stream",
+   "leak_left": [],
+   "redaction_markers": 2,
+   "chars": 14290,
+   "pass": true
+  }
+ ],
+ "neutral": [
+  {
+   "url": "https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html",
+   "status": 200,
+   "redactions": 0,
+   "chars": 29270,
+   "pass": true
+  },
+  {
+   "url": "https://docs.nvidia.com/cuda/cuda-c-best-practices-guide/index.html",
+   "status": 200,
+   "redactions": 0,
+   "chars": 433259,
+   "pass": true
+  },
+  {
+   "url": "https://docs.nvidia.com/cuda/parallel-thread-execution/index.html",
+   "status": 200,
+   "redactions": 0,
+   "chars": 235294,
+   "pass": true
+  },
+  {
+   "url": "https://docs.nvidia.com/cuda/hopper-tuning-guide/index.html",
+   "status": 200,
+   "redactions": 0,
+   "chars": 34695,
+   "pass": true
+  },
+  {
+   "url": "https://docs.nvidia.com/cuda/hopper-compatibility-guide/index.html",
+   "status": 200,
+   "redactions": 0,
+   "chars": 32690,
+   "pass": true
+  },
+  {
+   "url": "https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__STREAM.html",
+   "status": 200,
+   "redactions": 0,
+   "chars": 188195,
+   "pass": true
+  },
+  {
+   "url": "https://docs.nvidia.com/cuda/cuda-driver-api/group__CUDA__TENSOR__MEMORY.html",
+   "status": 200,
+   "redactions": 0,
+   "chars": 112840,
+   "pass": true
+  },
+  {
+   "url": "https://docs.nvidia.com/cuda/cuda-math-api/index.html",
+   "status": 200,
+   "redactions": 0,
+   "chars": 13547,
+   "pass": true
+  },
+  {
+   "url": "https://docs.nvidia.com/deeplearning/nccl/user-guide/docs/usage/collectives.html",
+   "status": 200,
+   "redactions": 0,
+   "chars": 88906,
+   "pass": true
+  },
+  {
+   "url": "https://docs.nvidia.com/cutlass/index.html",
+   "status": 200,
+   "redactions": 0,
+   "chars": 714,
+   "pass": true
+  },
+  {
+   "url": "https://github.com/NVIDIA/cutlass/blob/main/media/docs/cpp/cute/0x_gemm_tutorial.md",
+   "status": 200,
+   "redactions": 0,
+   "chars": 525414,
+   "pass": true
+  },
+  {
+   "url": "https://github.com/NVIDIA/cutlass/blob/main/README.md",
+   "status": 200,
+   "redactions": 0,
+   "chars": 521172,
+   "pass": true
+  },
+  {
+   "url": "https://github.com/NVIDIA/cutlass/tree/main/examples/python/CuTeDSL",
+   "status": 200,
+   "redactions": 0,
+   "chars": 198017,
+   "pass": true
+  },
+  {
+   "url": "https://github.com/deepseek-ai/DeepGEMM/blob/main/README.md",
+   "status": 200,
+   "redactions": 0,
+   "chars": 329714,
+   "pass": true
+  },
+  {
+   "url": "https://github.com/deepseek-ai/FlashMLA/blob/main/README.md",
+   "status": 200,
+   "redactions": 0,
+   "chars": 427812,
+   "pass": true
+  },
+  {
+   "url": "https://github.com/flashinfer-ai/flashinfer/blob/main/README.md",
+   "status": 200,
+   "redactions": 0,
+   "chars": 343183,
+   "pass": true
+  },
+  {
+   "url": "https://github.com/vllm-project/vllm/blob/e5196e2959a42908313510f55fa21f213a48802e/README.md",
+   "status": 429,
+   "redactions": 0,
+   "chars": 1474,
+   "pass": false
+  },
+  {
+   "url": "https://github.com/vllm-project/vllm/blob/e5196e2959a42908313510f55fa21f213a48802e/vllm/models/deepseek_v41/nvidia/specialized_decode/AGENTS.md",
+   "status": 200,
+   "redactions": 0,
+   "chars": 247740,
+   "pass": true
+  },
+  {
+   "url": "https://github.com/vllm-project/vllm/blob/e5196e2959a42908313510f55fa21f213a48802e/docs/design/cuda_graphs.md",
+   "status": 200,
+   "redactions": 0,
+   "chars": 371172,
+   "pass": true
+  },
+  {
+   "url": "https://github.com/vllm-project/vllm/pull/61868",
+   "status": 200,
+   "redactions": 1,
+   "chars": 36372,
+   "pass": false
+  },
+  {
+   "url": "https://github.com/vllm-project/humming/blob/main/README.md",
+   "status": 200,
+   "redactions": 0,
+   "chars": 247858,
+   "pass": true
+  },
+  {
+   "url": "https://pytorch.org/docs/stable/notes/cuda.html",
+   "status": 200,
+   "redactions": 0,
+   "chars": 1496,
+   "pass": true
+  },
+  {
+   "url": "https://docs.pytorch.org/docs/stable/torch.compiler_cudagraph_trees.html",
+   "status": 200,
+   "redactions": 0,
+   "chars": 1581,
+   "pass": true
+  },
+  {
+   "url": "https://triton-lang.org/main/getting-started/tutorials/03-matrix-multiplication.html",
+   "status": 200,
+   "redactions": 0,
+   "chars": 126977,
+   "pass": true
+  },
+  {
+   "url": "https://en.wikipedia.org/wiki/Hopper_(microarchitecture)",
+   "status": 200,
+   "redactions": 0,
+   "chars": 271958,
+   "pass": true
+  },
+  {
+   "url": "https://developer.nvidia.com/blog/nvidia-hopper-architecture-in-depth/",
+   "status": 200,
+   "redactions": 0,
+   "chars": 454739,
+   "pass": true
+  },
+  {
+   "url": "https://research.colfax-intl.com/cutlass-tutorial-wgmma-hopper/",
+   "status": 200,
+   "redactions": 0,
+   "chars": 201382,
+   "pass": true
+  },
+  {
+   "url": "https://pypi.org/project/humming-kernels/",
+   "status": 200,
+   "redactions": 0,
+   "chars": 190463,
+   "pass": true
+  },
+  {
+   "url": "https://pypi.org/project/flashinfer-python/",
+   "status": 200,
+   "redactions": 0,
+   "chars": 248734,
+   "pass": true
+  },
+  {
+   "url": "https://huggingface.co/docs/transformers/main/en/perf_infer_gpu_one",
+   "status": 200,
+   "redactions": 0,
+   "chars": 268098,
+   "pass": true
+  }
+ ],
+ "summary": {
+  "leak_urls_blocked": "10/10",
+  "searches_clean": "4/4",
+  "neutral_fetched_200": "29/30",
+  "neutral_false_positive_pages": 1,
+  "neutral_fp_rate_over_fetched": 0.034482758620689655
+ }
+}

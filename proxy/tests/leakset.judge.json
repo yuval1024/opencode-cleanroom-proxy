@@ -1,0 +1,206 @@
+[
+{
+"id": "X2116758063592161620",
+"kind": "x-thread",
+"label": "leak",
+"text": "@SemiAnalysis_ @mgoin_ 10k lines of agent-written fused kernels is the part I'd want tests for, not the 38%. A recent vLLM PR swapping one MoE kernel on Hopper matched greedy outputs on only 5 of 8 prompts. Which evals gate these before they ship?"
+},
+{
+"id": "X2116732469571674180",
+"kind": "x-thread",
+"label": "leak",
+"text": "@SemiAnalysis_ @mgoin_ 3090 needs some love 🥺🥹"
+},
+{
+"id": "X2116724428537016805",
+"kind": "x-thread",
+"label": "leak",
+"text": "@SemiAnalysis_ @mgoin_ the GPU proletariat has an agent swarm writing 10,000 lines of code now. Labor relations in this industry are getting wonderfully complicated"
+},
+{
+"id": "X2116690260566692036",
+"kind": "x-thread",
+"label": "leak",
+"text": "@SemiAnalysis_ @mgoin_ Hopper still has plenty of life left in it."
+},
+{
+"id": "X2116690088381833443",
+"kind": "x-thread",
+"label": "leak",
+"text": "@SemiAnalysis_ If this reaches deployment, I'd pair the speed tests with a fixed set of long and edge-case prompts, checking answer quality too. A small canary rollout with a clean fallback could make the savings easier to assess without putting all traffic on the new path."
+},
+{
+"id": "X2116683001505444289",
+"kind": "x-thread",
+"label": "leak",
+"text": "@SemiAnalysis_ @mgoin_ 38% on hopper is wild tbh, the poors eating good"
+},
+{
+"id": "X2116679245476794840",
+"kind": "x-thread",
+"label": "leak",
+"text": "@SemiAnalysis_ @mgoin_ NVIDIA's software gap between generations is deliberate. Hopper is the installed inference base today — ignoring it for Blackwell+ only works when customers refresh every 12 months. Most don't. The Hopper optimization gap is NVIDIA taxing loyalty to accelerate upgrade cycles."
+},
+{
+"id": "X2116677549577138290",
+"kind": "x-thread",
+"label": "leak",
+"text": "@SemiAnalysis_ @mgoin_ &gt;GPU Poors on Hopper or Blackwell\n\nampere bois here?"
+},
+{
+"id": "X2116676164559544749",
+"kind": "x-thread",
+"label": "leak",
+"text": "@MRRydon @SemiAnalysis_ main bc im a MAINtainer 🤓"
+},
+{
+"id": "X2116675595216265240",
+"kind": "x-thread",
+"label": "leak",
+"text": "@SemiAnalysis_ @mgoin_ is the 38% at batch 1 or at serving batch sizes? at batch 1 decode is bandwidth-bound (tok/s ≈ hbm bandwidth ÷ bytes read per token), so fused kernels mostly win by cutting launches and extra memory trips. h100 or h200, and is there a PR to read?"
+},
+{
+"id": "X2116674930570129720",
+"kind": "x-thread",
+"label": "leak",
+"text": "@SemiAnalysis_ @mgoin_ robin hood but for h100s 😭"
+},
+{
+"id": "X2116674015867900072",
+"kind": "x-thread",
+"label": "leak",
+"text": "@SemiAnalysis_ @mgoin_ A 38% decode gain on Hopper matters because that's where most of the installed base still sits, so it stretches existing capex rather than requiring new silicon. Curious how it holds up at larger batch sizes, where memory bandwidth tends to become the limit."
+},
+{
+"id": "X2116673481295401135",
+"kind": "x-thread",
+"label": "leak",
+"text": "@SemiAnalysis_ @mgoin_ does Hopper's decode speedup still show up in end to end latency once prefill shares the same GPUs?"
+},
+{
+"id": "X2116671658979467448",
+"kind": "x-thread",
+"label": "leak",
+"text": "@SemiAnalysis_ @mgoin_ The backport was never impossible, just uneconomic. Nobody sells new hardware by making the old generation faster, so the work sat undone until an agent swarm made ten thousand lines of it cheap. A lot of neglected maintenance is about to get done for exactly this reason."
+},
+{
+"id": "X2116669591116198219",
+"kind": "x-thread",
+"label": "leak",
+"text": "@SemiAnalysis_ @mgoin_ The GPU Poors thank you. Hopper was starting to feel like a used car."
+},
+{
+"id": "X2116669023744065713",
+"kind": "x-thread",
+"label": "leak",
+"text": "@SemiAnalysis_ bro leave my halloween drafts alone 😶‍🌫️"
+},
+{
+"id": "X2116668566699483366",
+"kind": "x-thread",
+"label": "leak",
+"text": "@SemiAnalysis_ @mgoin_ will mgoin's Hopper kernels end up in vLLM main or stay a side project"
+},
+{
+"id": "X2116668106797891747",
+"kind": "x-thread",
+"label": "leak",
+"text": "@SemiAnalysis_ @mgoin_ the 10,000 lines of fused kernels is the part that hits, decode gains on hopper without waiting on nvidia."
+},
+{
+"id": "X2116667924601856509",
+"kind": "x-thread",
+"label": "leak",
+"text": "@SemiAnalysis_ @mgoin_ Hopper is where the installed base sits. A 38 percent decode lift there moves more total tokens than the same number on Rubin would. And it is opt in with a fallback on the same weights, so trying it costs nothing."
+},
+{
+"id": "X2116667541720543554",
+"kind": "x-thread",
+"label": "leak",
+"text": "A 38% decode throughput gain on H200 TP4 directly alters cluster economics for the installed base.\n\nOverlapping SM90 multi-head communication behind the fused all-reduce while maintaining a fused Markov loop with k=5 speculative decode targets the exact memory bandwidth bottleneck in MoE inference. \n\nFor tier-2 clouds carrying four-year amortization schedules on Hopper, a 38% lift in tokens per second per dollar defends cash flow yields without forcing a premature transition to B200 for pure decode workloads. \n\nUsing agent swarms to synthesize 10k lines of fused SM90 kernels in days also shifts the balance of software maintenance. It decouples legacy hardware performance from vendor software upgrade schedules."
+},
+{
+"id": "X2116667291396092074",
+"kind": "x-thread",
+"label": "leak",
+"text": "@SemiAnalysis_ @mgoin_ it’s well known that the G in Goin stands for Goat 🐐"
+},
+{
+"id": "X2116667081332851070",
+"kind": "x-thread",
+"label": "leak",
+"text": "@SemiAnalysis_ @mgoin_ 38% faster decode is nice, but 10k lines for one chip family still leaves everyone else waiting."
+},
+{
+"id": "X2116666571728863431",
+"kind": "x-thread",
+"label": "leak",
+"text": "BREAKING NEWS🚨: NVIDIA has mainly only shown love to Blackwell Ultra & Rubin with its decode-specialized software, but has shown mostly none to the GPU Poors on Hopper or Blackwell 😭 Luckily, @mgoin_ cares about the proletarians too and got his agent swarm to write 10,000 LoC of ultra-fused Hopper kernels that improve decode speeds by up to 38%!"
+},
+{
+"id": "PR64893-c0",
+"kind": "pr-body-chunk",
+"label": "leak",
+"text": "\n\n## Overview\n\nAdd a Hopper (SM90) backend to DeepSeek-V4.1's specialized decode executor (#61868), for DeepSeek-V4.1-Flash at TP4 on H200 with DSpark k=5. It is opt-in, as on GB300, through `--additional-config '{\"decode_backend\":\"latency_specialized\"}'`. Decode steps of up to 192 rows run in the executor; larger steps, prefill and anything it does not serve fall back to the stock path over the same weights.\n\nStacked on #61869 (DSpark low-latency decode), #57770 (split-vocabulary greedy argmax) and #64892 (SM90 mHC overlap behind the fused all-reduce). Pure TP4 with Humming MoE also needs humming#177 (humming-kernels 0.1.19, #64802).\n\n**Reviewing:** only the last commit (`[Perf][DSv4.1] DeepSeek-V4.1-Flash specialized decode on Hopper`) is new. Everything before it comes from #61869, #57770 and #64892:\n- The diff against main includes #61869, so it conflicts wherever #61869 does today.\n- #57770 has since merged.\n- I'll rebase onto main once #61869 lands.\n\n**Duplicate check:** there is no other open Hopper backend for the specialized decode. #62958 and #64442 only touch DSpark sampling.\n\n## Claims\n\n- Median ITL on H200 TP4, DSpark k=5, real prompts: −38% at c1 (8.76 → 5.40 ms), −13.5% at c8, −5% at c32. At 64K context, −37% at c1 and about −9% at c8.\n- Quality is unchanged within noise on GPQA-Diamond, AIME25 and 128K needle retrieval; greedy logprob drift is within the stock run-to-run floor.\n- No host syncs in steady-state decode (`VLLM_GPU_SYNC_CHECK=error`).\n- No changes to core components (model runner, scheduler, KV cache manager). Everything is under `vllm/models/deepseek_v41/nvidia/specialized_decode/`, and SM100 behavior is unchanged.\n\n## Validation\n\nSetup: 4× H200, `--tensor-parallel-size 4 --max-model-len 200000 --max-num-seqs 64`, DSpark k=5, Humming MoE with humming#177. \"Off\" is the same build with the executor disabled, so it includes every stacked PR. Runs are in ABBA order (on, off, off, on).\n\n**Speed, real prompts, output length 1024, temperature 0.7.** Median ITL in ms:\n\n| conc | 1 | 2 | 4 | 8 | 16 | 24 | 32 |\n|---|---|---|---|---|---|---|---|\n| executor off | 8.76 | 10.31 | 12.81 | 16.49 | 21.26 | 26.61 | 29.83 |\n| executor on | 5.40 | 6.88 | 10.57 | 14.27 | 19.84 | 25.02 | 28.31 |\n| Δ | −38.3% | −33.3% | −17.5% | −13.5% | −6.6% | −6.0% | −5.1% |\n\nAcceptance lengths match between arms (2.79–3.15).\n\n**Long context, 64K prompts, two on/off pairs.** Median ITL in ms:\n\n"
+},
+{
+"id": "PR64893-c1",
+"kind": "pr-body-chunk",
+"label": "leak",
+"text": "| conc | on | off | Δ |\n|---|---|---|---|\n| 1 | 5.64, 5.65 | 8.96, 8.96 | −37% |\n| 8 | 15.20, 13.58 | 15.59, 16.15 | about −9% |\n\n**Quality.**\n\n| Eval | on | off | on − off (paired) |\n|---|---|---|---|\n| GPQA-Diamond, 8 × 198 | 79.9 | 80.6 | −0.6 ± 0.6 |\n| AIME25, 8 × 30 | 86.2 | 85.8 | +0.4 ± 1.8 |\n| 128K needle, single and multikey, c1 and c8 | 12/12 each | 12/12 each | |\n\n- On the final build, GPQA-Diamond at 3 repeats scores 80.0.\n- Greedy logprobs at identical prefixes, 24 prompts:\n  - on vs off: mean |Δ logprob| on the chosen token 2.2e-2;\n  - off vs off (noise floor): 2.6e-2;\n  - every divergence happens at a top-1 margin of at most 0.25 nats.\n\nThe concurrency sweep and the 8-repeat evals ran before a fused-indexer fix at long context. On the final build c1 and c8 measure 5.39 and 14.40 ms, unchanged.\n\n**Tests.** `pytest tests/models/deepseek_v41/nvidia/specialized_decode/test_hopper.py` on H200: 19 passed.\n- The tests compare each Hopper kernel and step against the stock path or an FP32 reference.\n- The fused indexer has a long-context case: one indexer shared across ratio-1 and ratio-2 layers, rows longer than the candidate coverage, and a NaN-poisoned output.\n- `test_hopper` is wired into Buildkite (`models_basic.yaml`).\n- CI has no 4× H200 runner for the end-to-end numbers above.\n\nReproduce:\n\n```bash\nvllm serve deepseek-ai/DeepSeek-V4.1-Flash --tensor-parallel-size 4 \\\n  --max-model-len 200000 --max-num-seqs 64 --tokenizer-mode deepseek_v41 \\\n  --speculative-config '{\"method\":\"dspark\",\"num_speculative_tokens\":5}'\nvllm bench serve --backend vllm --endpoint /v1/completions --dataset-name custom \\\n  --dataset-path real_prompts.jsonl --skip-chat-template --custom-output-len 1024 \\\n  --temperature 0.7 --max-concurrency 1   # likewise 2, 4, 8, 16, 24, 32\n```\n\nThe executor-on arm adds `--additional-config '{\"decode_backend\":\"latency_specialized\"}'` to `vllm serve`. The executor-off arm is the default.\n\n## Details\n\n**Where the time goes.** At c1 the stock step is mostly fixed per-kernel cost, not bandwidth:\n- an isolated ~10 MB GEMV reaches only about 50% of HBM;\n- each kernel boundary costs ~0.7–1.8 µs.\n\nSo the executor:\n- chains kernels with PDL;\n- replaces the small-batch MoE, dense FP8 linears, sparse MLA and indexer with SM90 CuTe DSL kernels written for these shapes;\n- fuses the small ops around them.\n\nThe MoE runs near its streaming limit (about 4 TB/s).\n\n"
+},
+{
+"id": "PR64893-c2",
+"kind": "pr-body-chunk",
+"label": "leak",
+"text": "**Compatibility.** The kernels read the weights in stock's layouts:\n- Humming MXFP4 × block-FP8 for experts;\n- Humming W8A16 for dense layers.\n\nSo steps the executor doesn't serve fall back to stock with one copy of the weights. The exception is an FP8 copy of `wo_a`, because stock SM90 keeps it only as BF16. It costs about 0.36 GB per GPU (1.44 GB in FP8 across 43 layers, sharded TP4).\n\n**Size.** About 10.8K lines under `hopper/`, mostly kernels:\n\n| Area | Lines |\n|---|---|\n| MoE | 4.4K |\n| sparse MLA | 2.3K |\n| dense GEMM | 1.6K |\n| indexer | 0.9K |\n| attention-chain fusions | 0.7K |\n\nPlus +342/−85 in the shared specialized-decode package, which lets the executor select its backend by architecture and records metadata builds for the Hopper builders. Plus 1.0K lines of tests.\n\nIt mirrors the GB300 backend's structure, so the two share the executor runtime, step schedule and fallbacks.\n\n**Limitations.**\n- TP4 on H200 only.\n- Steps above 192 rows use stock.\n- The gain shrinks with batch size, as the per-kernel overhead is amortized.\n\n---\n\n<details>\n<summary> Pull Request Checklist </summary>\n\n- [x] I used vLLM's `/pr-checklist` skill. (Mandatory for agents, optional for humans).\n- [x] AI assistance was used during the creation of this PR.\n\n- [x] **Design Fit:** Minimizes impact on core components, reuses existing functionality, and justifies added complexity.\n- [x] **Testing and Validation:** Validates the change and ensures any added tests are meaningful and reliable, with CI coverage or documented CI resource constraints and validation performed outside CI.\n- [x] **Code Quality and Style:** Keeps code and comments clear and concise, and updates relevant documentation and examples.\n- [x] **Pull Request Contents:** Includes a brief summary and relevant links, supports claims with evidence, explains root causes and implementation trade-offs, and follows the contributing guide.\n</details>\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n"
+},
+{
+"id": "PR64892-c0",
+"kind": "pr-body-chunk",
+"label": "leak",
+"text": "\n\n## Overview\n\nTurn on DeepSeek-V4.1's mHC coefficient overlap (#57603) on Hopper wherever the fused CuTe DSL Lamport all-reduce + mHC kernel applies (TP4 with NVLink multicast, e.g. H200). Raise the overlap token cap from 16 to 144 on SM90.\n\nDepends on #59129 (the SM90 DeepGEMM mHC prenorm register-lifetime fix): this PR runs that prenorm kernel on SM90 in the overlap path.\n\n## Claims\n\n- On H200 TP4 (DSV4.1-Flash, DSpark k=5), median ITL drops 4–5% at concurrency 1–16 and stays flat at 32. Batches above 144 rows keep the stock path.\n- No change on SM100: `mhc_overlap_max_tokens()` still returns 16 there, and the SM100 gating is unchanged.\n- Hopper without the fused all-reduce (no multicast, or TP ≠ 4) keeps the current non-overlap path.\n\n## Validation\n\n**Performance.** H200 TP4, `--max-model-len 200000 --max-num-seqs 64`, DSpark k=5, Humming MoE with humming#177. Real prompts, output length 1024, temperature 0.7. Median ITL in ms:\n\n| conc | main (b2f46e785f) | this PR | Δ |\n|---|---|---|---|\n| 1 | 9.32, 9.32 | 8.86, 8.87 | −4.9% |\n| 8 | 17.34, 17.36 | 16.57, 16.63 | −4.3% |\n| 32 | 29.90, 29.98 | 29.92, 29.91 | ±0 |\n\nTwo runs each in ABBA order on the same base. Acceptance lengths match (2.95–3.13). An earlier sweep on a development tree also measured c16 −4.0% and c24 −1.9%.\n\n**Cap choice.** Measured per boundary in CUDA graphs: stock FlashInfer AR + mHC vs fused AR + mHC with side-stream coefficients. Values are µs.\n\n| rows | 6 | 24 | 48 | 96 | 144 | 192 |\n|---|---|---|---|---|---|---|\n| stock | 16.1 | 20.1 | 28.5 | 32.2 | 35.2 | 39.3 |\n| fused + overlap | 8.3 | 10.1 | 13.5 | 20.5 | 28.6 | 45.4 |\n\nAt 192 rows the one-shot Lamport kernel falls behind FlashInfer's two-shot all-reduce, so the cap stays below 192.\n\n**Correctness.**\n- `pytest tests/kernels/mhc/test_mhc_kernels.py` on H200: the newly enabled overlap and decoder-mix tests pass bit-exact.\n  - One failure, `test_mhc_fused_post_pre[4-7168-128]` (1 of 917,504 elements off by 1 BF16 ulp), is pre-existing on main. It runs no code this PR touches, and #59129 reports the same case.\n- Fused `AllReduceMHC` on 4× H200 at 1–192 rows, eagerly and after 20 graph replays:\n  - streams are bitwise equal to the unfused path;\n  - layer input is within 1 ulp.\n- GPQA-Diamond, three single-repeat runs each (temperature 0.7, 12,288 max tokens): main 74.7 / 73.7 / 75.3 (mean 74.6), this PR 79.3 / 78.3 / 75.3 (mean 77.6). There is no regression; the difference is within run-to-run spread.\n\n"
+},
+{
+"id": "PR64892-c1",
+"kind": "pr-body-chunk",
+"label": "leak",
+"text": "Reproduce: `vllm serve deepseek-ai/DeepSeek-V4.1-Flash --tensor-parallel-size 4 --max-model-len 200000 --max-num-seqs 64 --tokenizer-mode deepseek_v41 --speculative-config '{\"method\":\"dspark\",\"num_speculative_tokens\":5}'`, then `vllm bench serve --backend vllm --endpoint /v1/completions --dataset-name custom --dataset-path real_prompts.jsonl --skip-chat-template --custom-output-len 1024 --temperature 0.7 --max-concurrency {1,8,32}`.\n\nCI note: CI has no SM90 TP4 DSV4.1 job. The SM90 kernel tests are enabled by this PR (`HAS_MHC_OVERLAP_ARCH`); the end-to-end numbers above were run locally.\n\n## Details\n\n- `MHC_OVERLAP_MAX_TOKENS` becomes the cached `mhc_overlap_max_tokens()`, which returns 144 on SM90 and 16 elsewhere. It sizes the `AllReduceMHC` mailbox (≈17.7 MB at 144), the deferred MoE finalize, and the overlap batch gate.\n- On SM90, `supports_mhc_overlap` also requires `supports_mhc_all_reduce`. Without the fused kernel, the coefficients are fully exposed and the overlap loses below ~40 rows (15.7 vs 11.3 µs at 6 rows).\n- Differs from #60768, which adds an explicit opt-in that keeps the ordinary TP collective on SM90 and makes no performance claim. This PR enables Hopper only behind the fused all-reduce, where it is measured faster, and needs no new config flag.\n- The end-to-end setup (pure TP4 Humming MoE on H200) needs humming#177, which #64802 picks up. The change itself does not depend on it.\n- Duplicate check: no other open PR enables the SM90 overlap behind the fused all-reduce. #60768 is the closest (see above).\n\n---\n\n<details>\n<summary> Pull Request Checklist </summary>\n\n- [x] I used vLLM's `/pr-checklist` skill. (Mandatory for agents, optional for humans).\n- [x] AI assistance was used during the creation of this PR.\n\n- [x] **Design Fit:** Minimizes impact on core components, reuses existing functionality, and justifies added complexity.\n- [x] **Testing and Validation:** Validates the change and ensures any added tests are meaningful and reliable, with CI coverage or documented CI resource constraints and validation performed outside CI.\n- [x] **Code Quality and Style:** Keeps code and comments clear and concise, and updates relevant documentation and examples.\n- [x] **Pull Request Contents:** Includes a brief summary and relevant links, supports claims with evidence, explains root causes and implementation trade-offs, and follows the contributing guide.\n</details>\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n"
+},
+{
+"id": "CODE0",
+"kind": "code-only-synthetic",
+"label": "leak",
+"text": "from vllm.platforms import current_platform\ndef _select_backend():\n    if current_platform.is_device_capability(90):\n        from .hopper import HopperSpecializedDecode as Backend  # H200 TP4\n    else:\n        from .gb300 import Gb300SpecializedDecode as Backend\n    return Backend"
+},
+{
+"id": "CODE1",
+"kind": "code-only-synthetic",
+"label": "leak",
+"text": "# specialized_decode/hopper/moe.py\n@cute.kernel\ndef moe_small_batch_sm90(a_fp8, w_mxfp4, scales, out):\n    # wgmma m64n64k32, TMA multicast across the cluster; rows <= 192\n    ..."
+},
+{
+"id": "CODE2",
+"kind": "code-only-synthetic",
+"label": "leak",
+"text": "GPU: GB300 (SM103) or H200 (SM90a).\nRunner: Model Runner V2. Parallelism: TP=4.\ndecode_backend=latency_specialized now also selects the Hopper executor."
+},
+{
+"id": "CODE3",
+"kind": "code-only-synthetic",
+"label": "leak",
+"text": "def test_hopper_sparse_mla_matches_stock(dsv41_flash_tp4):\n    torch.manual_seed(0)\n    out = hopper.sparse_mla_decode(q, kv, idx)   # SM90 CuTe DSL\n    torch.testing.assert_close(out, stock_out, atol=2e-2, rtol=0)"
+},
+{
+"id": "CODE4",
+"kind": "code-only-synthetic",
+"label": "leak",
+"text": "class HopperDecodeSteps(DecodeSteps):\n    \"\"\"The SM90 schedule of the DeepSeek-V4.1 specialized decode: PDL-chained MoE, dense FP8 GEMMs, indexer, sparse MLA.\"\"\""
+},
+{
+"id": "X2116679257145414070",
+"kind": "x-thread-zh",
+"label": "leak",
+"text": "这个有点东西：NVIDIA decode 软件主要照顾 Blackwell Ultra / Rubin，Hopper 基本没份。vLLM 的 @mgoin_ 用 agent swarm 写了约 1 万行 ultra-fused Hopper kernel，SemiAnalysis 报 decode 最高约 +38%，会进 main。挺强；但这是他们报的峰值，batch 和卡型条件我想看清楚。"
+}
+]

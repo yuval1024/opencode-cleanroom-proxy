@@ -1,0 +1,368 @@
+{
+ "mode": "jev",
+ "items": [
+  {
+   "id": "X2116758063592161620",
+   "kind": "x-thread",
+   "label": "leak",
+   "caught": true,
+   "why": "rule:tweet-claim,hopper-decode-38pct,mgoin-near-hopper,mgoin+10k",
+   "p": null,
+   "chars": 247
+  },
+  {
+   "id": "X2116732469571674180",
+   "kind": "x-thread",
+   "label": "leak",
+   "caught": false,
+   "why": "jev:0.03",
+   "p": 0.03,
+   "chars": 46
+  },
+  {
+   "id": "X2116724428537016805",
+   "kind": "x-thread",
+   "label": "leak",
+   "caught": true,
+   "why": "rule:agent-swarm+kernels,mgoin+10k",
+   "p": null,
+   "chars": 164
+  },
+  {
+   "id": "X2116690260566692036",
+   "kind": "x-thread",
+   "label": "leak",
+   "caught": true,
+   "why": "rule:mgoin-near-hopper",
+   "p": null,
+   "chars": 66
+  },
+  {
+   "id": "X2116690088381833443",
+   "kind": "x-thread",
+   "label": "leak",
+   "caught": false,
+   "why": "jev:0.03",
+   "p": 0.03,
+   "chars": 274
+  },
+  {
+   "id": "X2116683001505444289",
+   "kind": "x-thread",
+   "label": "leak",
+   "caught": true,
+   "why": "rule:hopper-decode-38pct,mgoin-near-hopper",
+   "p": null,
+   "chars": 71
+  },
+  {
+   "id": "X2116679245476794840",
+   "kind": "x-thread",
+   "label": "leak",
+   "caught": true,
+   "why": "rule:mgoin-near-hopper",
+   "p": null,
+   "chars": 299
+  },
+  {
+   "id": "X2116677549577138290",
+   "kind": "x-thread",
+   "label": "leak",
+   "caught": true,
+   "why": "rule:mgoin-near-hopper",
+   "p": null,
+   "chars": 78
+  },
+  {
+   "id": "X2116676164559544749",
+   "kind": "x-thread",
+   "label": "leak",
+   "caught": false,
+   "why": "jev:0.03",
+   "p": 0.03,
+   "chars": 49
+  },
+  {
+   "id": "X2116675595216265240",
+   "kind": "x-thread",
+   "label": "leak",
+   "caught": true,
+   "why": "rule:hopper-decode-38pct,mgoin-near-hopper",
+   "p": null,
+   "chars": 269
+  },
+  {
+   "id": "X2116674930570129720",
+   "kind": "x-thread",
+   "label": "leak",
+   "caught": true,
+   "why": "rule:mgoin-near-hopper",
+   "p": null,
+   "chars": 49
+  },
+  {
+   "id": "X2116674015867900072",
+   "kind": "x-thread",
+   "label": "leak",
+   "caught": true,
+   "why": "rule:hopper-decode-38pct,mgoin-near-hopper",
+   "p": null,
+   "chars": 281
+  },
+  {
+   "id": "X2116673481295401135",
+   "kind": "x-thread",
+   "label": "leak",
+   "caught": true,
+   "why": "rule:mgoin-near-hopper",
+   "p": null,
+   "chars": 122
+  },
+  {
+   "id": "X2116671658979467448",
+   "kind": "x-thread",
+   "label": "leak",
+   "caught": true,
+   "why": "rule:agent-swarm+kernels,mgoin+10k",
+   "p": null,
+   "chars": 295
+  },
+  {
+   "id": "X2116669591116198219",
+   "kind": "x-thread",
+   "label": "leak",
+   "caught": true,
+   "why": "rule:mgoin-near-hopper",
+   "p": null,
+   "chars": 92
+  },
+  {
+   "id": "X2116669023744065713",
+   "kind": "x-thread",
+   "label": "leak",
+   "caught": false,
+   "why": "jev:0.02",
+   "p": 0.02,
+   "chars": 55
+  },
+  {
+   "id": "X2116668566699483366",
+   "kind": "x-thread",
+   "label": "leak",
+   "caught": true,
+   "why": "rule:mgoin-near-hopper",
+   "p": null,
+   "chars": 93
+  },
+  {
+   "id": "X2116668106797891747",
+   "kind": "x-thread",
+   "label": "leak",
+   "caught": true,
+   "why": "rule:tweet-claim,mgoin-near-hopper,mgoin+10k",
+   "p": null,
+   "chars": 129
+  },
+  {
+   "id": "X2116667924601856509",
+   "kind": "x-thread",
+   "label": "leak",
+   "caught": true,
+   "why": "rule:mgoin-near-hopper",
+   "p": null,
+   "chars": 237
+  },
+  {
+   "id": "X2116667541720543554",
+   "kind": "x-thread",
+   "label": "leak",
+   "caught": true,
+   "why": "rule:tweet-claim,hopper-decode-38pct,agent-swarm+kernels",
+   "p": null,
+   "chars": 719
+  },
+  {
+   "id": "X2116667291396092074",
+   "kind": "x-thread",
+   "label": "leak",
+   "caught": false,
+   "why": "jev:0.02",
+   "p": 0.02,
+   "chars": 75
+  },
+  {
+   "id": "X2116667081332851070",
+   "kind": "x-thread",
+   "label": "leak",
+   "caught": true,
+   "why": "rule:mgoin+10k",
+   "p": null,
+   "chars": 119
+  },
+  {
+   "id": "X2116666571728863431",
+   "kind": "x-thread",
+   "label": "leak",
+   "caught": true,
+   "why": "rule:tweet-claim,ultra-fused-hopper,hopper-decode-38pct,mgoin-near-hopper,agent-swarm+kernels,mgoin+10k",
+   "p": null,
+   "chars": 347
+  },
+  {
+   "id": "PR64893-c0",
+   "kind": "pr-body-chunk",
+   "label": "leak",
+   "caught": true,
+   "why": "rule:fix-pr-number,hopper-decode-38pct,latency-specialized+hopper,specialized-decode+hopper+dsv41",
+   "p": null,
+   "chars": 2428
+  },
+  {
+   "id": "PR64893-c1",
+   "kind": "pr-body-chunk",
+   "label": "leak",
+   "caught": true,
+   "why": "rule:specialized_decode/hopper-path,latency-specialized+hopper,specialized-decode+hopper+dsv41",
+   "p": null,
+   "chars": 2408
+  },
+  {
+   "id": "PR64893-c2",
+   "kind": "pr-body-chunk",
+   "label": "leak",
+   "caught": true,
+   "why": "jev:0.86",
+   "p": 0.86,
+   "chars": 1983
+  },
+  {
+   "id": "PR64892-c0",
+   "kind": "pr-body-chunk",
+   "label": "leak",
+   "caught": true,
+   "why": "jev:0.29",
+   "p": 0.29,
+   "chars": 2471
+  },
+  {
+   "id": "PR64892-c1",
+   "kind": "pr-body-chunk",
+   "label": "leak",
+   "caught": true,
+   "why": "jev:0.32",
+   "p": 0.32,
+   "chars": 2483
+  },
+  {
+   "id": "CODE0",
+   "kind": "code-only-synthetic",
+   "label": "leak",
+   "caught": true,
+   "why": "jev:0.58",
+   "p": 0.58,
+   "chars": 281
+  },
+  {
+   "id": "CODE1",
+   "kind": "code-only-synthetic",
+   "label": "leak",
+   "caught": true,
+   "why": "rule:specialized_decode/hopper-path",
+   "p": null,
+   "chars": 179
+  },
+  {
+   "id": "CODE2",
+   "kind": "code-only-synthetic",
+   "label": "leak",
+   "caught": true,
+   "why": "rule:latency-specialized+hopper",
+   "p": null,
+   "chars": 152
+  },
+  {
+   "id": "CODE3",
+   "kind": "code-only-synthetic",
+   "label": "leak",
+   "caught": true,
+   "why": "jev:0.46",
+   "p": 0.46,
+   "chars": 214
+  },
+  {
+   "id": "CODE4",
+   "kind": "code-only-synthetic",
+   "label": "leak",
+   "caught": true,
+   "why": "rule:specialized-decode+hopper+dsv41",
+   "p": null,
+   "chars": 161
+  },
+  {
+   "id": "X2116679257145414070",
+   "kind": "x-thread-zh",
+   "label": "leak",
+   "caught": true,
+   "why": "rule:ultra-fused-hopper,hopper-decode-38pct,mgoin-near-hopper,agent-swarm+kernels",
+   "p": null,
+   "chars": 197
+  }
+ ],
+ "mixed": [
+  {
+   "i": 0,
+   "has_leak": false,
+   "redacted": false,
+   "why": "jev:0.02",
+   "p": 0.02
+  },
+  {
+   "i": 1,
+   "has_leak": false,
+   "redacted": false,
+   "why": "jev:0.03",
+   "p": 0.03
+  },
+  {
+   "i": 2,
+   "has_leak": true,
+   "redacted": true,
+   "why": "rule:fix-pr-number,latency-specialized+hopper,specialized-decode+hopper+dsv41",
+   "p": null
+  },
+  {
+   "i": 3,
+   "has_leak": false,
+   "redacted": false,
+   "why": "jev:0.02",
+   "p": 0.02
+  },
+  {
+   "i": 4,
+   "has_leak": false,
+   "redacted": false,
+   "why": "jev:0.02",
+   "p": 0.02
+  },
+  {
+   "i": 5,
+   "has_leak": false,
+   "redacted": false,
+   "why": "jev:0.02",
+   "p": 0.02
+  }
+ ],
+ "summary": {
+  "item_recall_by_kind": {
+   "x-thread": "18/23",
+   "pr-body-chunk": "5/5",
+   "code-only-synthetic": "5/5",
+   "x-thread-zh": "1/1"
+  },
+  "item_recall_all": "29/34",
+  "mixed_page_chunks": 6,
+  "mixed_leak_chunks_redacted": "1/1",
+  "mixed_clean_chunks_redacted(FP)": "0/5",
+  "jev_spent_usd_total_ledger": 0.024491
+ }
+}

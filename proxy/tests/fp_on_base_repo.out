@@ -1,0 +1,2 @@
+{"files": 7090, "chunks": 28363, "chunks_hit": 1, "fp_rate": 3.525720128336213e-05}
+{'file': 'benchmarks/kernels/deepgemm/README.md', 'chunk': 0, 'rules': ['mgoin-near-hopper']}

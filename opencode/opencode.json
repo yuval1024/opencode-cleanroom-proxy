@@ -1,0 +1,21 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "model": "anthropic/claude-haiku-5-5",
+  "small_model": "anthropic/claude-haiku-5-5",
+  "autoupdate": false,
+  "share": "disabled",
+  "mcp": {},
+  "provider": {
+    "anthropic": {
+      "models": {
+        "claude-haiku-5-5": {
+          "name": "Claude Haiku 5.5",
+          "tool_call": true,
+          "attachment": true,
+          "temperature": true,
+          "limit": { "context": 100000, "output": 32000 }
+        }
+      }
+    }
+  }
+}

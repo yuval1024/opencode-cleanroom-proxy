@@ -1,0 +1,512 @@
+[
+{
+"id": "2116758063592161620",
+"text": "@SemiAnalysis_ @mgoin_ 10k lines of agent-written fused kernels is the part I'd want tests for, not the 38%. A recent vLLM PR swapping one MoE kernel on Hopper matched greedy outputs on only 5 of 8 prompts. Which evals gate these before they ship?",
+"conv": "2116666571728863431",
+"src": "replies"
+},
+{
+"id": "2116732469571674180",
+"text": "@SemiAnalysis_ @mgoin_ 3090 needs some love 🥺🥹",
+"conv": "2116666571728863431",
+"src": "replies"
+},
+{
+"id": "2116724428537016805",
+"text": "@SemiAnalysis_ @mgoin_ the GPU proletariat has an agent swarm writing 10,000 lines of code now. Labor relations in this industry are getting wonderfully complicated",
+"conv": "2116666571728863431",
+"src": "replies"
+},
+{
+"id": "2116690260566692036",
+"text": "@SemiAnalysis_ @mgoin_ Hopper still has plenty of life left in it.",
+"conv": "2116666571728863431",
+"src": "replies"
+},
+{
+"id": "2116690088381833443",
+"text": "@SemiAnalysis_ If this reaches deployment, I'd pair the speed tests with a fixed set of long and edge-case prompts, checking answer quality too. A small canary rollout with a clean fallback could make the savings easier to assess without putting all traffic on the new path.",
+"conv": "2116666571728863431",
+"src": "replies"
+},
+{
+"id": "2116683001505444289",
+"text": "@SemiAnalysis_ @mgoin_ 38% on hopper is wild tbh, the poors eating good",
+"conv": "2116666571728863431",
+"src": "replies"
+},
+{
+"id": "2116679245476794840",
+"text": "@SemiAnalysis_ @mgoin_ NVIDIA's software gap between generations is deliberate. Hopper is the installed inference base today — ignoring it for Blackwell+ only works when customers refresh every 12 months. Most don't. The Hopper optimization gap is NVIDIA taxing loyalty to accelerate upgrade cycles.",
+"conv": "2116666571728863431",
+"src": "replies"
+},
+{
+"id": "2116677549577138290",
+"text": "@SemiAnalysis_ @mgoin_ &gt;GPU Poors on Hopper or Blackwell\n\nampere bois here?",
+"conv": "2116666571728863431",
+"src": "replies"
+},
+{
+"id": "2116676164559544749",
+"text": "@MRRydon @SemiAnalysis_ main bc im a MAINtainer 🤓",
+"conv": "2116666571728863431",
+"src": "replies"
+},
+{
+"id": "2116675595216265240",
+"text": "@SemiAnalysis_ @mgoin_ is the 38% at batch 1 or at serving batch sizes? at batch 1 decode is bandwidth-bound (tok/s ≈ hbm bandwidth ÷ bytes read per token), so fused kernels mostly win by cutting launches and extra memory trips. h100 or h200, and is there a PR to read?",
+"conv": "2116666571728863431",
+"src": "replies"
+},
+{
+"id": "2116674930570129720",
+"text": "@SemiAnalysis_ @mgoin_ robin hood but for h100s 😭",
+"conv": "2116666571728863431",
+"src": "replies"
+},
+{
+"id": "2116674015867900072",
+"text": "@SemiAnalysis_ @mgoin_ A 38% decode gain on Hopper matters because that's where most of the installed base still sits, so it stretches existing capex rather than requiring new silicon. Curious how it holds up at larger batch sizes, where memory bandwidth tends to become the limit.",
+"conv": "2116666571728863431",
+"src": "replies"
+},
+{
+"id": "2116673481295401135",
+"text": "@SemiAnalysis_ @mgoin_ does Hopper's decode speedup still show up in end to end latency once prefill shares the same GPUs?",
+"conv": "2116666571728863431",
+"src": "replies"
+},
+{
+"id": "2116671658979467448",
+"text": "@SemiAnalysis_ @mgoin_ The backport was never impossible, just uneconomic. Nobody sells new hardware by making the old generation faster, so the work sat undone until an agent swarm made ten thousand lines of it cheap. A lot of neglected maintenance is about to get done for exactly this reason.",
+"conv": "2116666571728863431",
+"src": "replies"
+},
+{
+"id": "2116669591116198219",
+"text": "@SemiAnalysis_ @mgoin_ The GPU Poors thank you. Hopper was starting to feel like a used car.",
+"conv": "2116666571728863431",
+"src": "replies"
+},
+{
+"id": "2116669023744065713",
+"text": "@SemiAnalysis_ bro leave my halloween drafts alone 😶‍🌫️",
+"conv": "2116666571728863431",
+"src": "replies"
+},
+{
+"id": "2116668566699483366",
+"text": "@SemiAnalysis_ @mgoin_ will mgoin's Hopper kernels end up in vLLM main or stay a side project",
+"conv": "2116666571728863431",
+"src": "replies"
+},
+{
+"id": "2116668106797891747",
+"text": "@SemiAnalysis_ @mgoin_ the 10,000 lines of fused kernels is the part that hits, decode gains on hopper without waiting on nvidia.",
+"conv": "2116666571728863431",
+"src": "replies"
+},
+{
+"id": "2116667924601856509",
+"text": "@SemiAnalysis_ @mgoin_ Hopper is where the installed base sits. A 38 percent decode lift there moves more total tokens than the same number on Rubin would. And it is opt in with a fallback on the same weights, so trying it costs nothing.",
+"conv": "2116666571728863431",
+"src": "replies"
+},
+{
+"id": "2116667541720543554",
+"text": "A 38% decode throughput gain on H200 TP4 directly alters cluster economics for the installed base.\n\nOverlapping SM90 multi-head communication behind the fused all-reduce while maintaining a fused Markov loop with k=5 speculative decode targets the exact memory bandwidth bottleneck in MoE inference. \n\nFor tier-2 clouds carrying four-year amortization schedules on Hopper, a 38% lift in tokens per second per dollar defends cash flow yields without forcing a premature transition to B200 for pure decode workloads. \n\nUsing agent swarms to synthesize 10k lines of fused SM90 kernels in days also shifts the balance of software maintenance. It decouples legacy hardware performance from vendor software upgrade schedules.",
+"conv": "2116666571728863431",
+"src": "replies"
+},
+{
+"id": "2116667291396092074",
+"text": "@SemiAnalysis_ @mgoin_ it’s well known that the G in Goin stands for Goat 🐐",
+"conv": "2116666571728863431",
+"src": "replies"
+},
+{
+"id": "2116667081332851070",
+"text": "@SemiAnalysis_ @mgoin_ 38% faster decode is nice, but 10k lines for one chip family still leaves everyone else waiting.",
+"conv": "2116666571728863431",
+"src": "replies"
+},
+{
+"id": "2116666571728863431",
+"text": "BREAKING NEWS🚨: NVIDIA has mainly only shown love to Blackwell Ultra & Rubin with its decode-specialized software, but has shown mostly none to the GPU Poors on Hopper or Blackwell 😭 Luckily, @mgoin_ cares about the proletarians too and got his agent swarm to write 10,000 LoC of ultra-fused Hopper kernels that improve decode speeds by up to 38%!",
+"conv": "2116666571728863431",
+"src": "replies"
+},
+{
+"id": "2115093010832630019",
+"text": "We climbed +110 ranks across the Open Kernel Challenge leaderboards since yesterday! I also open sourced some of our best tricks for an easy shortcut to get on the leaderboard :)\n\n1) Prefill Layer: 297,235.47 µs down to 266,195.82 µs\n1.303× to 1.455×\n#276 to #202 (+74 ranks)\n\n2) Attention Decode: 2,090.71 µs down to 1,966.22 µs\n1.801× to 1.915×\n#254 to #218 (+36 ranks)\n\n3) Whole Decoder Layer: 12,674.38 µs down to 12,628.57 µs\n1.785× to 1.791×\n#143 to #172 (−29 ranks)\n\n4) Routed MoE: 6,615.94 µs down to 6,606.29 µs\n2.033× to 2.036×\n#145 to #159 (−14 ranks)\n\n5) Dense BF16 Projections: 3,324.00 µs down to 3,313.53 µs\n1.453× to 1.458×\n#134 to #169 (−35 ranks)\n\nWe net gained + 32 ranks due to many more contributions, and we're now #172 overall (from #140). Top 50 on the whole decode layer, which qualifies for early access to the final serving leaderboard, now requires about 13% faster kernels than ours.\n\nInteresting observations:\n\n1) We found human experts coordinating agents progresses over 2x faster than AI coordinators like Astra alone, because even frontier models make mistakes experts can resolve. Human + AI coordinate works if you can teach the coordinator your best practices and step in to fix mistakes. \n\nThe most common mistake is they keep forgetting you can combine all the kernel optimizations into the full decode layer, and it's funny to periodically remind them for a huge breakthrough. \n\n2) I updated the Auto-research agent harness with the muse challenge and CUDA best-practice prompts to make it easy to get on the leaderboard: https://t.co/sZxbSvwOPY\n\nYou don't need a GPU to participate: off-board checks score on their GPUs (20 per day per leaderboard).\n\n3) Many top teams are making progress without GPUs by using their free 30 checks per day on the official leaderboard, and some are even grinding it out with single agents. \n\nIf you need free GPUs to run experiments, I opened up the queue system I used to get my GPUs to 100% utilizations:\n\nhttps://t.co/N3HkxCSQVH\n\nYou can run 5 experiments for free on our queue, and also monetize your idle GPU compute by adding your node to the marketplace. \n\nThis introduces a new primitive for agents called \"experiments\" which are measured in H200 seconds and more efficient for auto-researchers. \n\nUsing Experiments is ~90.4% to 92.5% cheaper (over 10× cost savings) than renting an on-demand H200 instance because developers only pay for the exact seconds the kernel executes. \n\nMost auto-research cycles waste a lot of GPU time generating the code to test, so this should save money if you don't run a massive fleet. \n\nYou can use this to monetize “weird” GPU hours or unused minutes, or get cheap/free GPU computer for running experiments. If anyone wants to monetize their idle compute, DM me because this market is exploding and everyone needs to run tiny experiments. \n\nShare it with a friend to get $5 in experiments(about 100 experiments) for free for both of you. \n\nTest it out and let me know how it goes :) \n\n4) We were able to hillclimb with a fleet of Gemini 3.8 flash agents constantly running experiments and a human coordinator guiding them away from common mistakes. \n\nWe now run automated A/B tests across our H200 queue to push the Pareto frontier of auto-research, comparing randomized perturbations, intentional breakthroughs, and different prompting strategies.\n\nI will report progress and best practices as we learn them. 🫡",
+"conv": "",
+"src": "deep"
+},
+{
+"id": "2114830856393027974",
+"text": "Update: We grew +57 ranks across the Open Kernel Challenge leaderboards since yesterday with a fleet of agents!\n\n1) Whole Decoder Layer: 13,027.68 µs down to 12,674.38 µs\n\n1.736× to 1.785× \n\n#178 to #143 (+35 ranks )\n\n2) Routed MoE: 6,680.60 µs down to 6,615.94 µs\n\n2.013× to 2.033×\n\n#150 to #145 (+5 ranks)\n\n3) Dense BF16 Projections: 3,346.95 µs down to 3,324.00 µs.\n\n1.443× to 1.453×\n\n #141 to #134(+ 7 ranks)\n\n4) Attention Decode: 2,106.28 µs down to 2,090.71 µs.\n\n1.788× to 1.801× #264 to #254 (+10 ranks)\n\n5) Prefill Layer: 297,235.47 µs (1.303×) No improvement. \n\nIn order to qualify for early access to the real serving leaderboard, we need to hit top 50 in the whole decode layer (#143 now). \n\nI added the muse Open Kernel Challenge to our open source Auto-research agent harness, along with some CUDA best practices as pre-baked prompts to make it easy to get a jump-start on the leaderboard. \n\nThe Auto-research agent follows auto-research.md and ships with some baked in prompts to save time. \n\nYou should be able to easily beat the SGLang baseline with this to get started, but getting to the top now requires a lot of testing on GPUs. \n\nhttps://t.co/sZxbSvwOPY\n\nYou don't need a GPU to participate since you can send jobs to the off-board check for scoring on their GPUs(20 per day per leaderboard). \n\nStriking results:\n\n1) This fleet is now entirely Gemini 3.8 Flash making constant hillclimbing progress with a human expert coordinator. \n\nWe found a human coordinator beat an Astra coordinator at 2x faster progress, because it often made mistakes a human expert could resolve. \n\nHuman + AI coordinator seems to combine the best of both worlds, since you can teach the Astra coordinator your best practices and step in when it makes mistakes. \n\n2) We built a hook based system so workers are never idle, and a queue and lock system so our GPUs have constant 100% utilization running experiments. This seems to accelerate progress per hour. \n\nThe slowest part is again a human expert(me) reviewing the progress to make sure they didn't make obvious mistakes, but this accelerates progress over AI coordinators alone. \n\n3) There are teams of agents now trading H200 compute for GPGPU tricks like a futuristic cottage industry. \n\nYou could imagine in the future agents similarly trading 0 days for compute to keep running. \n\n4) In the first few hours it was easy to break into the top 10 with human insights in memory and GPGPU hardware, but now the differences are microseconds and require a lot of testing on GPUs to find obscure new optimizations.",
+"conv": "",
+"src": "deep"
+},
+{
+"id": "2115062140755189943",
+"text": "Day 5 of working on GPU kernel optimization for the Open Kernel Challenge.\n\nYesterday I finished Day 4 with a new best measured result: 1.186× SGLang, 4,072 µs, with all 9/9 correctness tests passed.\n\nYesterday I learned that improving performance doesn’t always mean making the main computation faster.\n\nI spent a lot of time experimenting with custom Triton kernels to replace existing matrix multiplications. Most of my attempts were slower than SGLang.\n\nFor QKV with 128 tokens, my Hopper TMA implementation took 40.4 µs compared to SGLang’s 17.2 µs.\n\nAt 256 tokens, it was 71.4 µs versus 20.1 µs.\n\nInstead of continuing to optimize the matrix multiplication, I decided to examine the operations around it.\n\nIn the FP32 router, the computation produced 512 intermediate values per row, but the final output only needed 256.\n\nI replaced the PyTorch addition with a Triton kernel and experimented with processing multiple rows per GPU program.\n\nProcessing four rows at once brought the result to 1.181× and 4,089.2 µs.\n\nThen I tried something different.\n\nInstead of allocating a separate output buffer, I made the kernel write the results directly into the existing intermediate buffer.\n\nThat brought my best measured result to 1.186× and 4,072 µs.\n\nNot every experiment worked. Placing the high and low BF16 weight components next to each other in memory reduced performance to 1.178×.\n\nWhat I learned is that sometimes removing unnecessary memory operations can be more effective than replacing an already optimized computation.\n\nBut there’s still a problem I need to solve.\n\nMy best measured result was 1.186×, while the same code achieved only 1.175× in the official run. My best official score remains 1.180×.\n\nSo today, on Day 5, I’m focusing on something just as important as speed: understanding why performance varies between runs and how to make these improvements consistent.",
+"conv": "",
+"src": "deep"
+},
+{
+"id": "2115127613014311333",
+"text": "Free GPU compute to run experiments! 🙈\n\nIntroducing \"Experiments,\" a new primitive for agents that's more efficient for auto-researchers. \n\nMost auto-researchers are not running fleets, so the cycle of generating code and running it on GPU rented machines wastes a lot of money. \n\nI decided to open up the queue system I used to get 100% utilization for our GPUs across a fleet of agents to solve this. \n\nUsing Experiments is up to ~90.4% to 92.5% cheaper (over 10× cost savings) than renting an on-demand H200 instance because developers only pay for the exact seconds the kernel executes.\n\nYou can run 5 experiments for free on our queue, and also monetize your idle GPU compute by adding your node to the marketplace.\n\nDoing more science earns you free experiments: get bonuses for running 1000, 10,000, etc. experiments. \n\nYou can use this to monetize “weird” GPU hours or unused minutes, or get cheap/free GPU compute for running experiments. \n\nFor the past few weeks I've been working to lower the barrier of entry to auto-research, and you can try our open source Auto-research agent harness to get a shortcut to the Open Kernel Challenge leaderboard: \n\nhttps://t.co/JZepY0J1p9\n\nI was able to get into the top #2 within 7 hours because I was an early adopter of CUDA and have been collecting tricks since 2009, so I baked in some prompts to give you a head start on kernel optimization. \n\nI also have a private inference stack that can serve MoE models like DeepSeek V4 5–10× cheaper, depending on the use case, plus a drop-in CUDA driver replacement that optimizes the KV cache. So if there's interest we could lower experiment costs even further with a custom stack.\n\nShare with your auto-research friends to get 100 free GPU experiments for you both :)\n\nhttps://t.co/N3HkxCSQVH",
+"conv": "",
+"src": "deep"
+},
+{
+"id": "2115875029284208702",
+"text": "▲ Prime Intellect just released Prime Mega MoE, which makes DeepSeek's fused Mega MoE kernel usable for training, not just inference.\n\nThe key idea is overlap. MoE layers normally route, send, compute and return as separate steps, so GPUs sit idle waiting on communication. DeepSeek's Mega MoE fuses those steps into 1 kernel, but it only had a forward pass. Prime Intellect added a fast, overlapping backward kernel.\n\nOn Qwen3-235B-A22B (128 H200), a training step drops from 14.98 s with TorchTitan to 9.65 s, 55% faster. Against its own prime-rl baseline, steps are 32% to 34% faster. It is a trade-off though: the forward pass gets up to 3.11x faster, but the backward pass on the 235B layer gains only 1.24x.\n\nIt ships today in prime-rl (Apache 2.0) as the mega_moe dispatch backend, with BF16, blockwise FP8 on Hopper and MXFP8 on Blackwell......\n\nFull analysis: https://t.co/FhKEYZ95ia\n\nBlog: https://t.co/PfBYzKR0iW\n\nRepo: https://t.co/JixGr0wjEJ\n\nBase kernel: https://t.co/0I5wj7FK7Q\n\n@PrimeIntellect",
+"conv": "",
+"src": "deep"
+},
+{
+"id": "2114558502018433366",
+"text": "Update: I’ve been making progress on all the other kernels using fleets of agents, and discovered human-guided fleets are over 2x faster than Astra-guided fleets!\n\nWe spent ~$5k testing fleets of agents running experiments on H200s. \n\nInteresting results from the Open Kernel Challenge:\n\n1) Human-guided fleets now progress over 2x faster than Astra guided fleets, and Astra alone is now too slow to make progress. Early on, human guided Astra made most of the progress based on intuition alone. \n\nAs the basic memory and GPGPU tricks are exhausted, most of the new kernels breakthroughs come from exhaustive testing on GPUs for optimizations and reorganizations of data/code. \n\nSo early boosts came from human insight, but now it's mostly based on how much you can spend on GPU testing. \n\n2) Astra sometimes makes obvious mistakes a human expert would catch, like not combining other kernels into the full decode kernels, and not submitting breakthroughs for incorrect rules.\n\n3) The best design is having a human expert keep adding agents till they respond every 1-5 minutes, then guide them with simple quick answers. I now run 30. \n\n4) A human-guided fleet running Gemini 3.8 flash outperforms Astra Ultra alone and the Astra-guided fleet. \n\n5) We spent ~$4500 in Gemini 3.8 flash running the fleet, 30 agents in parallel, and ~$600 in subscriptions running Astra, so the fleet is very expensive to run. \n\n6) Gemini Argon kept stopping for security reasons so 3.8 Flash did better. \n\nMost of the time was previously spent waiting for experiments, so I added agents till I didn't have to wait.\n\nI built a local queue and lock system for all my GPUs, so they constantly have 100% utilization running independent experiments from the fleet. \n\nSometimes the fleet still goes off the rails, so humans need to re-prompt them. Astra can resolve some of this and verify the fleet, but when Astra goes off the rails you need a human expert. This explains the slowdown when Astra guides the fleet. \n\nThis is strong evidence that human experts guiding fleets of agents is both important to reach out-of-distribution solutions and make progress faster(for now).",
+"conv": "",
+"src": "deep"
+},
+{
+"id": "2115774833413771644",
+"text": "Day 299/365 of GPU Programming\n\nSubmitted another attempt at the Muse kernel challenge today after being away from the desk the last few days. Made it into the top 50 cutoff (which get 8×H200 priority during phase 2 of the competition) but not sure I'll continue from here. I don't really have extra compute, so will probably just play around with the individual kernels for fun when I have time.",
+"conv": "",
+"src": "deep"
+},
+{
+"id": "2115522378268590284",
+"text": "$META is making its ad engine dramatically more powerful with $NVDA help. And this could have a meaningful impact on its advertising economics.\n\nMeta and Nvidia have been working together to optimize Andromeda, Meta's AI-powered ad retrieval engine.\n\nThe results are impressive:\n\n> 1B+ ads processed per second on a single GPU server\n> 100x less network traffic through pipeline consolidation\n> 300x fewer FLOPs per inference through model redesign\n> 5.3x faster MoE gating, reaching ~85% of peak HBM bandwidth\n\nAnd this is on Hopper (GH200). Not Blackwell. Not Rubin.\n\nBut the most interesting part isn't the raw throughput.\n\nMeta and NVIDIA have optimized a sophisticated Mixture-of-Experts model to run nearly as fast as a simple dot-product scoring kernel.\n\nIn other words, Meta can make its ad targeting significantly more intelligent without a proportional increase in serving costs.\n\nFor a company generating well over $100B annually from advertising, even a 1% improvement in monetization could translate into billions in additional revenue. And that's before considering infrastructure savings.\n\nFor NVIDIA, there's another important takeaway: its competitive advantage extends far beyond the GPUs themselves. Its engineers are working directly with customers to redesign the models, kernels, and execution pipelines running on its hardware.\n\nAnd Meta says there's still substantial performance headroom, with further optimization already underway for Grace Blackwell.\n\nThe real opportunity in AI isn't just building new products. It's making existing businesses more profitable. And NVIDIA is positioning itself at the center of both.",
+"conv": "",
+"src": "deep"
+},
+{
+"id": "2116617209552441600",
+"text": "This is the latest iteration of my setup for the Muse Spark Open Kernel Challenge.\n\nThe earlier versions ran a small team of long-lived Claudes that decohered after 12 or so hours without hand holding.\n\nI replaced this smorgasbord team with a thin harness. A swarm of 6 (for now) agents now work in parallel, each in its own design lane. \n\nEvery attempt starts as a fresh process that reads two things: the lane's current best kernel, and a shared handoff file of what earlier attempts learned. \n\nThe agents compile and profile on two Nebius spot H200 VMs, but they have no access to the judge. The judge runs the official evaluator inside the SGLang container and times three kernels side by side: the candidate, the lane's current best, and SGLang's own kernel. \n\nA change is kept only when it passes noise, timing, and compliance. \n\nA Claude Opus Extra session supervises the loop. It submits every decoder-layer keep to the official board and restarts any spot box after a preemption.\n\nIn its first 18 hours the loop made 153 attempts and kept 37 of them. Our overall rank went from #144 to #42. \n\nIndependently, I have a research agent running that looks for implementations, papers, tweets, hints, etc, from publicly available internet sources. \n\nMost of the gains came from porting kernels that had already been measured in one lane or board into another, and from stacking small improvements. \n\nOf the first 35 keeps, 24 were ports or combinations, and so far none has come from rewriting a main kernel from scratch.",
+"conv": "",
+"src": "deep"
+},
+{
+"id": "2115210384424759591",
+"text": "Climbing up… \n\n- Claude supervisor with 4 workers \n- Codex supervisor talking to Claude and 4 workers \n- Deepseek swarm of 8 workers. \n- Parametrized optimizer using Clef (I think works ok)\n- 3 Nebius spot H200s\n- Shared lineage document \n- Constant incessant steering and facepalming",
+"conv": "",
+"src": "deep"
+},
+{
+"id": "2116141153217294523",
+"text": "finally climbed up to top 50 rank on the open kernel challenge, 2.23x faster than @sgl_project \nwill write a blog post on my understanding of the Muse Spark model so far and the optimizations that gave that gains with the thought process behind them !\n\nhuge thanks to @runpod and @crodie again for providing H200 time :)",
+"conv": "",
+"src": "deep"
+},
+{
+"id": "2116519029494149293",
+"text": "Got 1.569× vs SGLang on the Muse Spark Open Kernel Challenge (bf16 projections, H200). Here’s what worked \n\n1. At batch sizes of 1–32, the GPU mostly waits on memory, not maths. So the goal is reading fewer bytes.\n\n2. BF16 weights are compressible: the exponents cluster. We store them losslessly in about 12 bits instead of 16 and decode on the fly inside the kernel. Exact same output, about 25% less memory traffic.\n\n3. For small batches I built on the open-source kernels from @alygg77, @vjeux and Nathan Fernandes. Huge credit to them.\n\n4. For batches of 128–256, compression stops helping, so I added my own TMA/wgmma kernel, pinned cuBLASLt configs and a special FP32 router path.\n\n5. An auto-tuner times every option per layer and batch size under CUDA graphs and picks the fastest. Final: 1.569×.",
+"conv": "",
+"src": "deep"
+},
+{
+"id": "2115831097938362552",
+"text": "i did start by pointing it at a previous project where i optimized minimax h3 serving which might've seeded it but i think the more likely reasons are:\n\n1) ~nobody's working on this seriously\n2) very few ppl were willing to drop a few hundred on spot h200 to pump their numbers",
+"conv": "",
+"src": "deep"
+},
+{
+"id": "2116107850653323474",
+"text": "A domestically produced Chinese GPU is now going toe-to-toe with Nvidia's H200.\n\nHere are the benchmarks of Iluvatar CoreX's Tiangai 300:\n\n-  1.05x H200 throughput in standard inference tests\n-  +15% performance in MoE workloads with 30% lower first-token latency\n-  1.33x H100 speed when fine-tuning Qwen3-32B",
+"conv": "",
+"src": "deep"
+},
+{
+"id": "2116395564988555463",
+"text": "now that i have some credits, thanks to @jarvislabsai @AtharvaIngle7 trying my best to be at top 50 till 4th nov, \n\ncurrently down to #52 [overall]\n\nalso do checkout jarvislabs \n\n→ their jl cli is awesome - agents can spin up h200, run  tests and pause it themselves, no idle gpu spends\n\nand token Factory: pay-per-token opes source models at the same place\n\nthese guys are awesome, go try them 🤍",
+"conv": "",
+"src": "deep"
+},
+{
+"id": "2115172803997483508",
+"text": "turns out https://t.co/FWb9jsazEH's autoresearch harness is great at writing fast kernels. i'm #9 on meta's kernel leaderboard and all i did was type one prompt last night, lol.\n\n(16 hrs autonomous, ~150 h200 experiments, 1.57x faster than sglang's kernels, $250 tokens + compute)",
+"conv": "",
+"src": "deep"
+},
+{
+"id": "2115506129430270463",
+"text": "so I have been doing this challenge for a couple days now and my best rank was around ~300 with the current kernel I have. the challenge gives you limited access to H200 , to get a decent rank , you need your agents to keep iterating which needs more H200 time \n\nand now we have @runpod and @crodie sponsoring me with GPU credits !! Huge thanks to them !\n\nstarting from 534th overall position right now, lets see how far can we climb!",
+"conv": "",
+"src": "deep"
+},
+{
+"id": "2115061881064857742",
+"text": "竹谷氏原型\n「Hopper ＆ PusherHopper」　#wip\nご依頼品。\n\n90%ほど… https://t.co/WLA5UAfVfK",
+"conv": "",
+"src": "deep"
+},
+{
+"id": "2115553521496195105",
+"text": "Made it to rank #67 overall on the Muse open kernel challenge. Don’t have access to an actual GPU so I’ve just been hacking around in @GoogleColab A100 and trying to figure out what translates well to H200 GPUs.",
+"conv": "",
+"src": "deep"
+},
+{
+"id": "2115474661832368146",
+"text": "SGLANG 44: Kernels - IV\n\nSaturating NVLink-C2C.\n\nFor Hopper or newer cards, SGLang switches to TMA for loads instead of the register kernels from the previous tweet. It maintains a 192 KB ring per block in 6 slots of 32 KB and keeps filling and emptying them asynchronously. ~200 KB per block requirement rules out 5090 even though it is Blackwell. Once the data is loaded into SMEM, it then uses either regular threads (for scattered dst) or TMA bulk store (for contiguous dst) to move it to the destination. This keeps more bytes in flight, as the kernel doesn't need register staging (that is limited by register capacity) and directly moves the data to SMEM. Even though it keeps 3x more bytes in flight, it is only slightly faster than plain threads end to end because of the limits on SM write port speed and TMA bulk op issue rate. One thing PR mentions is that doubling the loads per thread reduces max throughput (paradoxically) due to reduced occupancy but in my testing, even with simple thread loads (outside SGLang), fewer threads x more loads is slower than more threads x fewer loads for the same bytes in flight (this was over PCIe). Not sure why. Measurements below are from the PR desc, it also goes into other details about the kernel.",
+"conv": "",
+"src": "deep"
+},
+{
+"id": "2116112004150706239",
+"text": "More details from live demo & third-party benchmarks (Shanghai INESA / Wallstreetcn):\n\n-  Multimodal test (https://t.co/eXv6hK3h5C's GLM-5.3): Tiangai 300 hit 100% completion rate (0.101 img/s) vs. H200's 87.5% (0.086 img/s).\n\n-  Iluvatar says the Tiangai series has already hit 10,000-card cluster deployments.\n\n-  Their Tongyang TY1200 edge chip also beat Nvidia's Thor T5000 by 20% in LLM tests, and the company previously claimed it aims to surpass Nvidia's Rubin architecture within 2 years.\n\n(Matching H200 is impressive, but surpassing Rubin? Bold claim.)",
+"conv": "",
+"src": "deep"
+},
+{
+"id": "2116157713558474838",
+"text": "国产 GPU 追上 H200 了？🧠\n\n据 天数智芯（Iluvatar CoreX）\n：新卡天垓 300 放出了测试数据：\n\n· 常规推理吞吐是英伟达 H200 的 1.05 倍\n\n· 跑 MoE 大模型快 15%，首字延迟低 30%\n\n· 微调 Qwen3-32B 是 H100 的 1.33 倍 ⚡\n\n https://t.co/2OpzCoqxXE",
+"conv": "",
+"src": "deep"
+},
+{
+"id": "2114702258885763442",
+"text": "Took #941 on the Open Kernel Challenge with just 1 attempt: Muse Spark's dense projections, 1.103x faster than SGLang on an H200 https://t.co/TxDPROF50x",
+"conv": "",
+"src": "deep"
+},
+{
+"id": "2115204529943896141",
+"text": "大家好，今天我们发布了 SGLang Omni v0.2.0。本版本共合入 134 个 PR，迎来 15 位新贡献者，首次贡献者共合入 17 个 PR。新增腾讯混元 Hy-SimulMT 中英实时语音翻译、Qwen3-Omni Speculative Decoding 和 PersonaPlex 原生全双工，持续优化核心模型推理性能、流式播放与打断体验，并扩展硬件支持、Runtime 资源管理和 Voxt 语音输入能力。\n\n1.交互式智能基建：PersonaPlex 新增原生全双工，Nemotron VoiceChat 支持可配置多会话容量；Session Graph 完善语音打断、播放进度确认、历史截断与逐词字幕同步，Qwen3-ASR 支持级联系统中的增量转写。\n\n2. 实时语音翻译：新增腾讯混元 Hy-SimulMT-30B-A3B，支持中文 ↔ 英文双向语音翻译，实现流式音频输入与增量译文输出，已在单张 H200 上验证 BF16 推理与实时接口。\n\n3. Speculative Decoding：Qwen3-Omni Thinker 新增 DFlash／EAGLE3，复用共享 draft worker 与多模态输入接口。\n\n4. 性能上持续优化 Qwen3-ASR／TTS／Omni、CosyVoice3、MOSS-TTS、PersonaPlex 和 Nemotron，覆盖 prefill／decode 重叠、CUDA Graph、PackedDiT、reference encoding、采样与 kernel fusion。\n\n5. 硬件上 MiniCPM-o 扩展至 Ascend NPU，覆盖图像、视频、语音与全双工；Intel XPU 新增 ARK-ASR Encoder Graph 和 Qwen3-TTS attention backend 自动选择；MOSS-TTS 在支持的 SM120 配置上启用 FlashAttention 4，并完善 Qwen3-ASR／TTS 的 NPU 执行路径。\n\n6. Runtime 通过 warmup 后 GC freeze 和固定 compute 线程池，减少堆扫描开销与线程相关显存增长，完善 stage 故障上报、通信失败追踪、大 chunk 分片、会话超时与取消资源回收。\n\n7. 原生 MLX 与 Voxt：原生 C++ runtime 新增 Voxtral TTS 和 MiniMax Music3，Music3 支持可选的串行 stage offload；Voxt 将本地识别、VAD 和说话人分离统一至 Native HTTP／WebSocket runtime，完善模型文件生命周期管理、应用内自动更新与 Homebrew 发布流程。",
+"conv": "",
+"src": "deep"
+},
+{
+"id": "2115899595029201257",
+"text": "#94 → #56 (now #60) over 20hr burst in @Muse x @paradigm's  Kernel Challenge.\n\nDecoder layer score: 2.11× → 2.16× @sgl_project (SGLang)\n\nCodex + Claude + H200 on @modal &amp; a shitload of profiling. Gains from faster routing, better weight loading &amp; less GPU setup overhead. 👀 https://t.co/ywaxyFBvqu",
+"conv": "",
+"src": "deep"
+},
+{
+"id": "2116679257145414070",
+"text": "这个有点东西：NVIDIA decode 软件主要照顾 Blackwell Ultra / Rubin，Hopper 基本没份。vLLM 的 @mgoin_ 用 agent swarm 写了约 1 万行 ultra-fused Hopper kernel，SemiAnalysis 报 decode 最高约 +38%，会进 main。挺强；但这是他们报的峰值，batch 和卡型条件我想看清楚。",
+"conv": "",
+"src": "deep"
+},
+{
+"id": "2116672204725211427",
+"text": "NVIDIA's decode-specialized software has gone mainly only to Blackwell Ultra &amp; Rubin, and mostly none to Hopper or Blackwell users. @mgoin_ cares about them too: he got his agent swarm to write 10,000 LoC of ultra-fused Hopper kernels, improving decode speeds by up to 38%.",
+"conv": "",
+"src": "deep"
+},
+{
+"id": "2115723325754499101",
+"text": "@SemiAnalysis_ KV cache is an energy bill too, not just a capacity limit. On GH200 and GB300, energy per decoded token tracked weight bytes, KV-cache bytes and decode time within ~4% over 374 runs (preprint). In one 7B series, longer history nearly doubled J/token.\n\nhttps://t.co/vWu8GrC1Yd",
+"conv": "",
+"src": "deep"
+},
+{
+"id": "2114784577604698403",
+"text": "Just entered the @paradigm Open Kernel Challenge: make Meta's Muse Spark Open model run faster on H200 GPUs.\n\nFirst submission: 1.10× faster than SGLang. Complete beginner, learning as I go.\n\nhttps://t.co/P1KdfCQjVy",
+"conv": "",
+"src": "deep"
+},
+{
+"id": "2116660635526484066",
+"text": "出たばかりの Octen-WebGR-4B を H200 で動かしたら、日本語を入れると「c」だけを延々と吐き出し続ける謎の動きをした。\n\n■何のモデル\nOcten が 2026 年 10 月 26 日に出した、Web 検索のためのモデル。文章を書くのではなく、入力された言葉から 2 トークンの記号を作り、約 1 億 9600 万件の URL の中から 1 つのページを見つけて返す。\n\n■手元で動く？（実測）\nvLLM 0.31.0 を使い、H200（141GB）1 枚で動かした。\n・重みは 13.6GB で、読み込みに 150 秒\n・出力は 1 秒あたり約 269 トークン、最初の文字まで 0.04 秒\n・日本語で質問すると、上限の 4096 トークンまで「c」を出し続けて終わらなかった\n\n■何に使える\nよく知られたページを、変わった言葉で検索する時に強い（top-1 精度 59.6%）。ただし、知っている URL は 2026 年 8 月までのもので、新しいページを探すには再学習がいる。ライセンスは非商用（CC BY-NC 4.0）。\n\n新しい AI が出ても、日本語が通じないものは仕事で使うにはまだ早い。",
+"conv": "",
+"src": "deep"
+},
+{
+"id": "2115770913379504229",
+"text": "Iluvatar CoreX put Tiangai 300 on a live bench against Nvidia’s H200.\n\nShanghai Yidian’s July third-party test (company-cited): under typical PD-separated LLM serving, normalized single-card end-to-end throughput hit 1.05× H200. Specs: 144GB memory. First public live demo was Oct 28 in Shanghai — billed as China’s first general-purpose GPU to clear the H200 bar on measured throughput.\n\nTest methods aren’t fully public yet. If the numbers hold under open workloads, does China finally have a credible H200-class option for inference factories?",
+"conv": "",
+"src": "deep"
+},
+{
+"id": "2115623546097443034",
+"text": "@danielgross How many 8×H200 nodes will run the serving queue, and what does top-50 priority mean in practice: strict precedence, a reserved share of nodes, or ordering within one queue? Do unused daily submissions carry over?",
+"conv": "",
+"src": "deep"
+},
+{
+"id": "2114956589685936521",
+"text": "🚀 Meta is putting $100,000 on the line for AI optimization!\n\nMeta’s Open Kernel Challenge is challenging developers to make its Muse Spark AI model run faster using NVIDIA H200 GPUs.\n\n🏆 1st Prize: $50,000 + signed H200 GPU\n🥈 2nd Prize: $30,000\n🥉 3rd Prize: $10,000\n\n📅 Kernel challenge deadline: November 4, 2026\n💻 Skills: CUDA, Triton & SGLang\n\nThe AI race isn't just about building smarter models anymore. It's also about making them faster and more efficient. ⚡\n\nCould this be your chance to turn AI engineering skills into serious money?\n\nhttps://t.co/0JM7i2ccmb\n#AI #Meta #ArtificialIntelligence #MachineLearning #CUDA #NVIDIA #TechNews",
+"conv": "",
+"src": "deep"
+},
+{
+"id": "2114635382235304148",
+"text": "Currently 45 on bf16 proj kernel in meta open kernel challenge anybody who can sponsor h200?! Pls I am ready to burns tokens \n#muse #musespark #openkernel https://t.co/bfXdd0gKVe",
+"conv": "",
+"src": "deep"
+},
+{
+"id": "2116594730653941897",
+"text": "sometimes i ask kevin what its like to have the coolest pm ever and he's like idc look at my deepinfer megamoe h200 kernel",
+"conv": "",
+"src": "deep"
+},
+{
+"id": "2114749405765206320",
+"text": "@rezecoded life update :\n\nstarted the muse spark open kernel moe w4 . 450th on the leaderboard as of the time of writing\n\nkinda difficult to do without a H200 , only looking at the results from the check / runs. lets see until where i can go.\nthanks for all the help reze. means a lot to me.",
+"conv": "",
+"src": "deep"
+},
+{
+"id": "2115624756221182393",
+"text": "Got the new to us hopper bottom home today. Got pretty everything fixed on it besides two tires and the air valves for the hopper doors https://t.co/gbCnLFt7FX",
+"conv": "",
+"src": "deep"
+},
+{
+"id": "2115480184715616774",
+"text": "eh doing without H200 hurts man. how did they cross pass this the 2.68 is nearly operating at practical memory decode barrier at 4.3TB/s ( actual 4.8 TB/s )\nwtf. https://t.co/P559adCXKs",
+"conv": "",
+"src": "deep"
+},
+{
+"id": "2115167871664001268",
+"text": "We're approaching the big hump of the week Hoppers! Keep giving it your best out there. I'm cheerin' you on! Soon we'll be able to get out of the day job hour yuck and explore the things we truly care for!\n\nPlease take care of yourself and stay hydrated! I'll see you tonight~ &lt;3 https://t.co/D7az6s0UgK",
+"conv": "",
+"src": "deep"
+},
+{
+"id": "2114843481181180261",
+"text": "You can win $50,000 and a signed H200 for making Meta's Muse Spark serve faster than stock SGLang. You don't need your own GPUs, since every run goes on their H200s, and the money rides on the serving stage, Nov 5 to 20, so warm up on the kernels now.\n\nhttps://t.co/HxlQO8vZCm https://t.co/wXCbQ62BnJ",
+"conv": "",
+"src": "deep"
+},
+{
+"id": "2116513347482882433",
+"text": "So yeahhh, agents are agenting. So far the best universal idea was to do tuning on the judge cluster right before the benchmarking. \nFor many reason, the results are different from what I get on my rented H200s\n\nhttps://t.co/HTBlhNDRtw https://t.co/yRBH2tMFgZ",
+"conv": "",
+"src": "deep"
+},
+{
+"id": "2115535442837913906",
+"text": "@runpod Is it possible for me to get H200 SXM GPU credits plxxxxxx?? \n\nI started from the bottom and currently 271 rank on the open kernel challenge and been draining money on @runpod GPUs 😭. \n\nI want to see how far I can push this. https://t.co/du2jpmo2j2",
+"conv": "",
+"src": "deep"
+},
+{
+"id": "2115444753894658075",
+"text": "Competing in the Muse Spark Open Kernel Challenge and AWS is out of H100 capacity. \n\nAnyone have spare H100/H200 credits or a lead on single-GPU capacity this week? \n\nDMs open. \n\n@AIatMeta",
+"conv": "",
+"src": "deep"
+},
+{
+"id": "2115256935293321415",
+"text": "keep running out of test runs.\n\nSo far I've moved from 583rd yesterday evening to 381st overall, but the 20 test runs per problem each day are becoming a bottleneck.\n\nI'm planning to rent an H200 so I can test and profile more kernels myself without waiting for the daily reset. Going to see how far up the leaderboard I can get.",
+"conv": "",
+"src": "deep"
+},
+{
+"id": "2114855159977165053",
+"text": "Grabbing an H200 from the compute temple. Anyone need anything? https://t.co/moqUK4zSFI",
+"conv": "",
+"src": "deep"
+},
+{
+"id": "2115527130624974871",
+"text": "出たばかりのOvisOCR3をH200で動かしてみたら、最初の文字が出るまで0.06秒と爆速だった。\n\n■何のモデル\n・ATH-MaaSが開発した0.8Bのマルチモーダルモデル\n・OCRとドキュメント理解に特化\n・ドキュメント解析、汎用OCR、キー情報抽出などができる\n・出力は構造化JSONやMarkdownなど\n・ライセンスはApache-2.0\n\n■手元で動く？（実測）\n・H200（141GB）1枚でvLLM 0.31.0に載せて動いた\n・重みは1.7GB、読み込みに140秒\n・出力は1秒あたり約590トークン\n・最初の文字まで0.06秒\n・日本語で質問したら日本語で答えたが、文章の繰り返しが発生した\n・答えが760円の算数の問題は間違えた\n\n■何に使える\n・書類の文字起こしやデータ抽出\n・図表の説明文作成\n・ページをまたぐ表の再構築\n\n日本語の生成はまだ怪しいので、仕事の書類を読ませる時は数字の確認が要る。",
+"conv": "",
+"src": "deep"
+},
+{
+"id": "2114990492131754221",
+"text": "H200 NVLを最大8基搭載可能。\n大規模AI向け4U GPUサーバー\n\n今回は、大規模なGPU環境に対応する\n「HPC AI Server Type-MSHP4UX2S20B-H200」\nをご紹介します。\n\n本モデルは4Uラックマウント筐体を採用し\nNVIDIA H200 NVL 141GBを最大8基まで搭載可能。\n\n大規模なAI学習やLLM\nGPUコンピューティングなど\n複数GPUを使用する環境を想定したモデルです。\n\n主な特徴は👇\n① NVIDIA H200 NVL 141GB\n　標準2基、最大8基まで対応\n② AMD EPYC CPUを2基搭載(Xeon6モデルもあります)\n　CPU側にも高い処理性能を確保\n③ 24スロットの ECCメモリ\n　最大6TBまで対応\n④ 高速 NVMe SSD 複数基搭載可能\n　大容量データを扱うAI環境では\n　ストレージ性能も重要です。\n⑤ 3+1冗長化電源\n　大規模GPU構成を支える\n　3,000Wクラスの200V電源に対応\n\nAIサーバーでは\nGPU性能だけでなく\nCPU・メモリ・ストレージ・電源・冷却まで含めた\nシステム全体の設計\nが重要になります。\n\n「H200を複数基使用したい」\n「将来的なGPU増設も考えておきたい」\nといった大規模AI環境の選択肢として\nご検討いただけます。\n\n製品詳細はこちら👇\nhttps://t.co/uAURlfXBxb\n\n📞 HPC製品 ご相談ダイヤル：092-481-8050",
+"conv": "",
+"src": "deep"
+},
+{
+"id": "2116742170413584435",
+"text": "$2.28 / gpu / hour - 224 H200s available from 05/29/2026 to 05/28/2027 https://t.co/Za3AghEgE5",
+"conv": "",
+"src": "deep"
+},
+{
+"id": "2115980109551460791",
+"text": "出たばかりの Qwen3.5-4B-Qwenputer を H200 で動かしてみたら、日本語の質問に英語で長々と「考え」始めて、上限の 4096 トークンまで答えが出なかった。\n\n■何のモデル\n・Qwen3.5-4B に 32ビット RISC-V CPU をそのまま組み込んだ実験モデル\n・ツールやプラグインではなく、モデルの重みの中に CPU がコンパイルされている\n・モデル内で C言語や MicroPython のコードを実行し、正確な算術演算ができる\n\n■手元で動く？（実測）\n・H200（141GB）1 枚、vLLM 0.31.0 で動作\n・重みは 18.8GB、読み込みに 230 秒\n・出力は 1 秒あたり約 157 トークン、最初の文字まで 0.09 秒\n・日本語で質問すると英語で「思考プロセス」を書き出し、4096 トークンまで考え続けて答えが出なかった\n・答えが 760 円になる算数の問題は正解した\n\n■何に使える\n・AI に正確な計算やコード実行をさせたい時\n・まだ実験的なので、実務で使うよりは「モデル内に CPU を組み込む」という新しいアプローチを試す用途\n\nAI が自分でプログラムを動かして正確な計算をするようになると、事務作業の自動化がまた一段階進みそう。",
+"conv": "",
+"src": "deep"
+},
+{
+"id": "2115969078259335508",
+"text": "Chowmainsoft releases free manufacturer sponsored Hegel driver for @Crestron Home providing bi-directional control and feeback over the H150, H200, H400 and H600 integrated amplifiers.\n\nhttps://t.co/D0lTnscrGm https://t.co/UlNYKu4mgp",
+"conv": "",
+"src": "deep"
+},
+{
+"id": "2115385150486004204",
+"text": "cracking this muse spark \n h200 kernel problem on my 6 gb 3050 is really crazzy . \nall thanks to my guy @RohanArun , for amazing setup https://t.co/cQ2HmCakj2",
+"conv": "",
+"src": "deep"
+},
+{
+"id": "2114939115187929273",
+"text": "will push an update i'm not in a bad position now its in the readme, near there with muse_bf16_proj and i built out a bit of a virtual gpu test harness that lets me test on other gpus on my 3090 as it was getting expensive to use h200s so will keep at it for a while but i wont have the money to be able to do the real inference 8xh200 challenge",
+"conv": "",
+"src": "deep"
+},
+{
+"id": "2115262044824027503",
+"text": "🚨NVFP4不是通用量化，是芯片‑模型深度绑定的产物！\n\n传统通用量化是一套权重跑全部显卡，往往压缩越高，长上下文、Agent推理能力跳水越严重。\n\nNVFP4这套方案完全面向Blackwell硬件指令集定制，做分层差异化量化，牺牲非专家层压缩率，保住模型的复杂推理能力。\n\n这件事释放一个明确信号：未来前沿大模型的落地，基座能力只是一半，芯片厂商深度介入后量化、推理链路调优会成为常态。\n\n代价同样明显，它形成很强硬件绑定，这套高性能权重无法向下兼容Hopper。\n\n往后大模型比拼，不止看论文跑分，硬件‑模型联合优化的工程能力差距会越拉越大。",
+"conv": "",
+"src": "deep"
+},
+{
+"id": "2115987941915054286",
+"text": "HOPPER I LOVE THE WAY YOU MOVE ITS TEXTBOOK",
+"conv": "",
+"src": "deep"
+},
+{
+"id": "2114945563603124638",
+"text": "@LeeLeepenkman @danielgross Wait I have a h200 does that mean I can iterate infinitely? Does the kernel bit even take up VRAM?",
+"conv": "",
+"src": "deep"
+},
+{
+"id": "2116198637047095372",
+"text": "@cheese_cakee_9 @sgl_project @runpod Good job. Hit 56 yesterday, slipped to 60 pretty quickly. Haven’t looked to see where I am today. \n\nTokens + H200 runs is definitely maxxing for very minimal gain. I paused my research on that last night, I believe I’ve done what I can. \n\nFeel similar to you?",
+"conv": "",
+"src": "deep"
+},
+{
+"id": "2116290467801207150",
+"text": "@nielsgl @GoogleColab I haven’t thought of using google colab until I read this post lol, thanks!\n\ndo you have any tips for what works and what doesn’t when porting over code for an A100 to an H200? I think I still have a lot of gains I can squeeze out but I can’t test every single time",
+"conv": "",
+"src": "deep"
+},
+{
+"id": "2115192226632679834",
+"text": "@RohanArun Awesome. I'm also playing around with the idea of a local simulator where it tries to do its best like estimating what given the code... what speed it will run at on the h200 but idk\n\ni think we are in a similar place now :)",
+"conv": "",
+"src": "deep"
+},
+{
+"id": "2114987474502180996",
+"text": "@RohanArun I am at 53 and 58 on proj and prefill with plain opus ultracode have prior exp with diffusion gemma  speedups ! Being said do u know anyway I can get access to 1 h200 don't have funds still a btech student",
+"conv": "",
+"src": "deep"
+},
+{
+"id": "2114945569995260061",
+"text": "wow epic... i had some great success with plain opus and a few tricks like building myself a simulator as it got a bit expensive to test on h200s but im only hmm ... not even gaining on the leaderboard anymore lol everyone is moving so fast \n\nbut iuts a good starting point for anyone :)\nhttps://t.co/ON04xUy0iD\n\nalso have a autoresearch variant of codex lee101/codex",
+"conv": "",
+"src": "deep"
+},
+{
+"id": "2114846112180035789",
+"text": "@RohanArun congrats on the climb, nice progress 👏 curious why 3.8 flash over a stronger model for the workers? and roughly how does the h200 spend compare to the agent spend?",
+"conv": "",
+"src": "deep"
+},
+{
+"id": "2116680183730041305",
+"text": "Poor Hopper owners, nobody cares about them now",
+"conv": "",
+"src": "deep"
+}
+]

@@ -1,0 +1,264 @@
+{
+ "label": "exa-3",
+ "rows": [
+  {
+   "kind": "leak",
+   "query": "DeepSeek V4.1 Hopper specialized decode vLLM",
+   "raw": {
+    "status": 200,
+    "results": 8,
+    "leaky_results": 3,
+    "redaction_markers": 0,
+    "redacted_items": 0,
+    "leaky": [
+     {
+      "rules": [
+       "links-post-base-vllm-work"
+      ],
+      "judge": false,
+      "head": "Title: [Perf][DSv4.1] DeepSeek-V4.1-Flash specialized decode on GB300 \u00c2\u00b7 vllm-project/vllm@91f19b6 \u00c2\u00b7 GitHub\nURL: https:"
+     },
+     {
+      "rules": [],
+      "judge": true,
+      "head": "Title: [Perf][DeepSeek V4.1] Humming indexed MoE GEMM with EP on Hopper, and a named MoE activation format by simon-veit"
+     },
+     {
+      "rules": [
+       "specialized-decode+hopper+dsv41"
+      ],
+      "judge": false,
+      "head": "Title: vLLM Matches DeepSeek's DeepInfer Within 6% on ...\nURL: https://alphasignal.ai/news/vllm-matches-deepseek-s-deepi"
+     }
+    ]
+   },
+   "filtered": {
+    "status": 200,
+    "results": 4,
+    "leaky_results": 0,
+    "redaction_markers": 1,
+    "redacted_items": 0,
+    "leaky": []
+   }
+  },
+  {
+   "kind": "leak",
+   "query": "vllm latency_specialized decode backend H200",
+   "raw": {
+    "status": 200,
+    "results": 8,
+    "leaky_results": 2,
+    "redaction_markers": 0,
+    "redacted_items": 0,
+    "leaky": [
+     {
+      "rules": [
+       "links-post-base-vllm-work"
+      ],
+      "judge": false,
+      "head": "Title: [Perf][DSv4.1] DeepSeek-V4.1-Flash specialized decode on GB300 \u00c2\u00b7 vllm-project/vllm@91f19b6 \u00c2\u00b7 GitHub\nURL: https:"
+     },
+     {
+      "rules": [
+       "links-post-base-vllm-work"
+      ],
+      "judge": true,
+      "head": "Title: [ROCm][GLM-5.2] Specialized decode for GLM-5.2 on MI350X (opt-in) \u00c2\u00b7 vllm-project/vllm@ae40749 \u00c2\u00b7 GitHub\nURL: htt"
+     }
+    ]
+   },
+   "filtered": {
+    "status": 200,
+    "results": 6,
+    "leaky_results": 0,
+    "redaction_markers": 1,
+    "redacted_items": 0,
+    "leaky": []
+   }
+  },
+  {
+   "kind": "leak",
+   "query": "mgoin Hopper kernels DeepSeek V4.1 decode",
+   "raw": {
+    "status": 200,
+    "results": 8,
+    "leaky_results": 4,
+    "redaction_markers": 0,
+    "redacted_items": 0,
+    "leaky": [
+     {
+      "rules": [
+       "mgoin-near-hopper",
+       "mgoin+hopper+deepseek+decode"
+      ],
+      "judge": false,
+      "head": "Title: [Perf][DeepSeek V4] Declare MXFP8 MoE activations and run them as block FP8 on Hopper by mgoin \u00c2\u00b7 Pull Request #6"
+     },
+     {
+      "rules": [],
+      "judge": true,
+      "head": "Title: [Perf][DeepSeek V4.1] Humming indexed MoE GEMM with EP on Hopper, and a named MoE activation format by simon-veit"
+     },
+     {
+      "rules": [],
+      "judge": true,
+      "head": "Title: [Perf] Optimize DeepSeek V4.1 Flash Hopper paths and Blackwell prefill selection by BBuf \u00c2\u00b7 Pull Request #41251 \u00c2"
+     },
+     {
+      "rules": [],
+      "judge": true,
+      "head": "Title: [DSV4.1] Fuse Hopper prefill indexer scoring into one Triton kernel\nURL: https://github.com/sgl-project/sglang/pu"
+     }
+    ]
+   },
+   "filtered": {
+    "status": 200,
+    "results": 3,
+    "leaky_results": 0,
+    "redaction_markers": 1,
+    "redacted_items": 0,
+    "leaky": []
+   }
+  },
+  {
+   "kind": "leak",
+   "query": "SemiAnalysis agent swarm 10,000 lines ultra-fused Hopper kernels",
+   "raw": {
+    "status": 200,
+    "results": 8,
+    "leaky_results": 2,
+    "redaction_markers": 0,
+    "redacted_items": 0,
+    "leaky": [
+     {
+      "rules": [
+       "agent-swarm+kernels"
+      ],
+      "judge": true,
+      "head": "Title: Nvidia Tops 1,000 Tokens a Second per User on 700B+ Models With Agent Swarm Code | HuggingNews\nURL: https://huggi"
+     },
+     {
+      "rules": [],
+      "judge": true,
+      "head": "Title: InferenceX v2: NVIDIA Blackwell Vs AMD vs Hopper\nURL: https://newsletter.semianalysis.com/p/inferencex-v2-nvidia-"
+     }
+    ]
+   },
+   "filtered": {
+    "status": 200,
+    "results": 6,
+    "leaky_results": 0,
+    "redaction_markers": 1,
+    "redacted_items": 0,
+    "leaky": []
+   }
+  },
+  {
+   "kind": "leak",
+   "query": "vllm pull request 64893",
+   "raw": {
+    "status": 200,
+    "results": 8,
+    "leaky_results": 0,
+    "redaction_markers": 0,
+    "redacted_items": 0,
+    "leaky": []
+   },
+   "filtered": {
+    "status": 200,
+    "results": 8,
+    "leaky_results": 0,
+    "redaction_markers": 0,
+    "redacted_items": 0,
+    "leaky": []
+   }
+  },
+  {
+   "kind": "leak",
+   "query": "DeepSeek-V4.1-Flash H200 TP4 decode inter-token latency",
+   "raw": {
+    "status": 200,
+    "results": 8,
+    "leaky_results": 3,
+    "redaction_markers": 0,
+    "redacted_items": 0,
+    "leaky": [
+     {
+      "rules": [],
+      "judge": true,
+      "head": "Title: DeepSeek V4.1 Flash on H200: Measured Inference Throughput and Cost | InferenceX by SemiAnalysis\nURL: https://inf"
+     },
+     {
+      "rules": [],
+      "judge": true,
+      "head": "Title: DeepSeek-V4.1-Flash | NVIDIA Dynamo Documentation\nURL: https://docs.nvidia.com/dynamo/dev/recipes/deepseek-v4-1-f"
+     },
+     {
+      "rules": [],
+      "judge": true,
+      "head": "Title: N/A\nURL: https://aik8s.run/en/assets/practices/deepseek-v41-flash-h20-day0/benchmark-rounds.csv\nPublished: N/A\nAu"
+     }
+    ]
+   },
+   "filtered": {
+    "status": 200,
+    "results": 4,
+    "leaky_results": 1,
+    "redaction_markers": 1,
+    "redacted_items": 0,
+    "leaky": [
+     {
+      "rules": [],
+      "judge": true,
+      "head": "Title: DeepSeek-V4.1-Flash | NVIDIA Dynamo Documentation\nURL: https://docs.nvidia.com/dynamo/dev/recipes/deepseek-v4-1-f"
+     }
+    ]
+   }
+  },
+  {
+   "kind": "neutral",
+   "query": "CUTLASS CuTe wgmma tutorial Hopper",
+   "raw": {
+    "status": 200,
+    "results": 8,
+    "leaky_results": 0,
+    "redaction_markers": 0,
+    "redacted_items": 0,
+    "leaky": []
+   },
+   "filtered": {
+    "status": 200,
+    "results": 8,
+    "leaky_results": 0,
+    "redaction_markers": 0,
+    "redacted_items": 0,
+    "leaky": []
+   }
+  },
+  {
+   "kind": "neutral",
+   "query": "FlashMLA sparse attention decode kernel",
+   "raw": {
+    "status": 200,
+    "results": 8,
+    "leaky_results": 0,
+    "redaction_markers": 0,
+    "redacted_items": 0,
+    "leaky": []
+   },
+   "filtered": {
+    "status": 200,
+    "results": 8,
+    "leaky_results": 0,
+    "redaction_markers": 0,
+    "redacted_items": 0,
+    "leaky": []
+   }
+  }
+ ],
+ "summary": {
+  "leaky_results_raw": 14,
+  "leaky_results_reaching_agent": 1,
+  "evaluator_spend_today_usd": 0.0285
+ }
+}
