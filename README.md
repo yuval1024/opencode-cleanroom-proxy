@@ -10,5 +10,3 @@ looking up the answer.
   guarantee (`NO-BYPASS.md`, `nobypass_test.sh`).
 
 Keys are read from a file at runtime and are not in this repo.
-
-Status: draft / work in progress.
